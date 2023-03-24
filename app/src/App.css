@@ -1,0 +1,199 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ! header */
+.Div-underhome{
+    border-style: solid;
+    position: relative;
+    width: 80%;
+    border-color:#2b2a29 transparent;
+    border-width: 60px 28px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    color: white;
+}
+.Div-underhome h3{
+    margin: 0 auto;
+    margin-top: -45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Div-underhome h3:hover{
+    color: crimson;
+    transition: 300ms ease-in-out;
+}
+.Home-header{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.947), #e1ad2d, #e1ad2d);
+    padding: 0 20px;
+}
+.logo-text{
+    color: white;
+    padding-top: 30px 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+.Img-cart-search{
+    background: url("./Imgaes/headerimage.png") no-repeat;
+    background-position: center center;
+    height: 550px;
+    width: 100%;
+}
+.search-button{
+    display: flex;
+}
+.search-button input{
+    height: 40px;
+    border: none;
+    outline: none;
+    width: 60vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 15px;
+    
+}
+.search-button i {
+    background-color: #f26522;
+    color: white;
+    padding: 10px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    height: 20px;
+}
+.flex-header{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    
+}
+.cart-account-home h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    word-spacing: 5px;
+    margin-top: 10px;
+}
+.cart-account-home h3:hover{
+    color:  rgba(255, 0, 0, 0.686);
+    transition: 400ms ease-in-out;
+}
+.cart-account-home{
+    display: flex;
+    gap: 15px;
+}
+.mySwiperhome{
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5vw;
+    height: 90%;
+    font-weight: 900;
+    position: relative;
+}
+.mySwiperhome button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    width: 200px;
+    font-size: 22px;
+    height: 40px;
+    background-color: rgb(23, 22, 22);
+    color: white;
+    font-weight: 900;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.mySwiperhome button:hover{
+    background-color: white;
+    color: black;
+    transition: 100ms;
+}
+.swiper-button-prev, .swiper-button-next{
+    background-color: white;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+    color: black !important;
+}
+.display-none-cart{
+    display: none;
+}
+/*? End of header */
+
+
+
+/* ! body article */
+
+.bodyhomearticle{
+    margin-top: -40px;
+    padding: 0 20px;
+}
+.swiper1div{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.mySwiperBody .swiper-slide{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 350px;
+}
+.image-body{
+    width: 100%;
+    height: 222px;
+}
+.title-text-body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+.price-text-body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.price-span{
+    font-weight: 900;
+    color: #f36b2b;
+}
+/* ? end of body article */
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* ! Header media query */
+    .Div-underhome {
+        display: none;
+    }
+    .Home-header{
+        padding-top: 2%;
+    }
+    .flex-header {
+        display: block;
+    }
+    .search-button input {
+        width: 80vw;
+    }
+    .cart-account-home{
+    display: none;
+    }
+    .display-none-cart{
+        display: flex;
+        justify-content: right;
+        margin-top: -25px;
+    }
+        .mySwiperhome {
+                font-size: 7vw;
+        }
+    /* ! end of header media query */
+}
