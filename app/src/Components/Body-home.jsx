@@ -8,17 +8,6 @@ import "swiper/css/pagination";
 
 export default function BodyHome() {
     const [ProductData, Setproductdata] = useState([])
-    useEffect(() => {
-    axios.get('https://api.escuelajs.co/api/v1/products')
-    .then(response => {
-        Setproductdata(response.data)
-        console.log(ProductData)
-        console.log(response)
-    })
-    .catch(error => {
-        console.log(error)
-    })
-    }, []);
     return(
         <article className="bodyhomearticle">
 <div className="swiper1div">
@@ -50,13 +39,13 @@ export default function BodyHome() {
         navigation={false} 
         modules={[Navigation, Autoplay]} 
     className="mySwiperBody">
-        {ProductData.slice(0, 39).map((item, index) => (
+        {/* {ProductData.slice(0, 39).map((item, index) => (
     <SwiperSlide key={index}>
     <h3 className="title-text-body">{item.title}</h3>
     <p className="price-text-body"><span className="price-span">Price</span> $ {item.price}</p>
     <img className="image-body" src={item.category.image} alt=""/>
     </SwiperSlide> 
-        ))}
+        ))} */}
     
 </Swiper>
 <br /><br />
