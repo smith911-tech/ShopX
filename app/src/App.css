@@ -146,7 +146,10 @@ body{
 }
 .mySwiperBody .swiper-slide{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 350px;
+    height: 390px;
+}
+.mySwiperBody{
+    height: 500px;
 }
 .image-body{
     width: 100%;
@@ -156,6 +159,12 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     font-weight: 900;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 20px auto;
 }
 .price-text-body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -164,6 +173,47 @@ body{
 .price-span{
     font-weight: 900;
     color: #f36b2b;
+}
+.image-body{
+    object-fit: contain;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.mySwiperfashion-text h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+.bottom-text{
+    display: flex;
+    padding: 10px 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 900;
+}
+.buynow-text{
+    cursor: pointer;
+    color: #f36b2b;
+}
+.seemore-text{
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+}
+.mySwiperBody .swiper-button-next, .mySwiperBody .swiper-button-prev{
+    background-color: #30302e;
+    border-radius: 0;
+    color: white;
+    margin-top: 180px;
+}
+.mySwiperBody .swiper-button-next::after, .mySwiperBody .swiper-button-prev::after{
+    color: white;
+}
+.mySwiperBody .swiper-button-next:hover, .mySwiperBody .swiper-button-prev:hover{
+    background-color: #f26522;
+    transition: 300ms;
+    transition: ease-in-out;
 }
 /* ? end of body article */
 
@@ -196,4 +246,10 @@ body{
                 font-size: 7vw;
         }
     /* ! end of header media query */
+
+    /* ! body article  */
+    .mySwiperfashion-text h1 {
+            font-size: 10vw;
+    }
+    /* ? end of body artcle */
 }

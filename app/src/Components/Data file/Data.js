@@ -2,7 +2,7 @@ export default[
     {
         id: 1,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/912fnf1CXfL._AC_UL1500_.jpg",
-        price: `$44.99`,
+        price: `44.99`,
         name: `Legendary Whitetails Men's Tough as Buck Double Layer Thermal Henley Shirt-Casual Long Sleeve Waffle Knit Regular Fit`,
         desc: `63% Cotton, 37% Polyester imported
         Pull On closure
@@ -21,7 +21,7 @@ export default[
     {
         id: 2,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61FiKXqESuL._AC_UL1301_.jpg",
-        price: `$29.99`,
+        price: `29.99`,
         name: `Unisex Military Blazers Prince Coats Drummer Parade Punk Officer Fitted Jackets`,
         desc: `100% Polyester
         Button closure
@@ -39,7 +39,7 @@ export default[
     {
     id: 3,
     img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51cvEBcmbwL._AC_UL1500_.jpg",
-    price: `$25.99`,
+    price: `25.99`,
     name: `GORGLITTER Men's Letter Graphic Drawstring Sweatpants Elastic Waist Casual Pants Trousers`,
     desc: `99% Polyester, 1% Elastane
     Imported
@@ -57,7 +57,7 @@ export default[
     {
         id: 4,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51W2VYaSc4L._AC_UL1500_.jpg",
-        price: `$125.00`,
+        price: `125.00`,
         name: `Gill Men's Tournament Angler Fishing Rain Outdoor Bib Trousers Fully Taped & Waterproof`,
         desc: `100% Nylon
         Made in the USA or Imported
@@ -75,7 +75,7 @@ export default[
     {
         id: 5,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41DT5VrZqJL._AC_.jpg",
-        price: `$59.99`,
+        price: `59.99`,
         name: `Nike Men's Air Monarch IV Cross Trainer`,
         desc: `Leather-And-Synthetic
         Imported
@@ -93,7 +93,7 @@ export default[
     {
         id: 6,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81VWwOXDTsL._AC_UL1500_.jpg",
-        price: `$49.99`,
+        price: `49.99`,
         name: `New Balance Men's Dynasoft Nitrel V5 Trail Running Shoe`,
         desc: `Imported
         Rubber sole
@@ -111,7 +111,7 @@ export default[
     {
         id: 7,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/813pfOCb72L._AC_UL1500_.jpg",
-        price: `$28.98`,
+        price: `28.98`,
         name: `ODODOS Women's Crop 3-Pack Washed Seamless Rib-Knit Camisole Crop Tank Tops`,
         desc: `82% Nylon, 18% Spandex
         Imported
@@ -129,7 +129,7 @@ export default[
     {
         id: 8,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61h03pm7zFL._AC_UL1010_.jpg",
-        price: `$31.99`,
+        price: `31.99`,
         name: `OQQ Women's 3 Piece High Waist Workout Shorts Butt Lifting Tummy Control Ruched Booty Smile Yoga Short Pants`,
         desc: `70% Nylon, 25% Polyester, 5% Spandex
         进口
@@ -147,7 +147,7 @@ export default[
     {
         id: 9,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/512ux0u2pqL._AC_UL1000_.jpg",
-        price: `$22.97`,
+        price: `22.97`,
         name: `Nike Men's Soccer Park III Shorts`,
         desc: `100% Polyester`,
         category: "shorts"
@@ -155,7 +155,7 @@ export default[
     {
         id: 10,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61d0ZwEWuKS._AC_UL1200_.jpg",
-        price: `$28.99`,
+        price: `28.99`,
         name: `YAXHWIV Mens Tactical Shorts 11" Waterproof Cargo Shorts for Men Hiking Fishing Breathable Quick Dry Regular(NO Belt)`,
         desc: `80% Polyester, 20% Nylon
         Made in the USA or Imported
@@ -173,7 +173,7 @@ export default[
     {
         id: 11,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/31XJkxpydqL._SY300_SX300_QL70_FMwebp_.jpg",
-        price: `$399.99`,
+        price: `399.99`,
         name: `PlayStation 5 Digital Edition`,
         desc: `Model Number CFI-1215B01X
         Stunning Games - Marvel at incredible graphics and experience new PS5 features.
@@ -188,7 +188,7 @@ export default[
     {
         id: 12,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61GJQyjIIhL._AC_SY355_.jpg",
-        price: `$33.99`,
+        price: `33.99`,
         name: `BINNUNE Wireless Gaming Headset with Microphone for PC PS4 PS5 Playstation 4 5, 2.4G Wireless Bluetooth USB Gamer Headphones with Mic for Laptop Computer`,
         desc: `[High Performance 2.4G+Bluetooth 5.0] BINNUNE wireless gaming headset combines high performance 2.4 GHz lossless wireless for Pro-level gaming audio on PlayStation and PC , with the convenience of simultaneous Bluetooth connectivity for most of your mobile devices.
         [Hear Every Details] The 50mm driver plus 2.4G lossless wireless emphasizes both subtle and critical in-game background sounds, allowing you to hear very details, so you will never miss a step or shot during game playing.
@@ -215,7 +215,7 @@ export default[
     {
         id: 14,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/31Eoll-lhHL._SX466_.jpg",
-        price: `$245.49`,
+        price: `245.49`,
         name: `PlayStation 3 250GB System (Renewed)`,
         desc: `250GB HDD for storing games, music, videos, and photos
         High-Definition Blu-ray player for the best movie experience
@@ -231,7 +231,7 @@ export default[
     {
         id: 15,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51mS5FhRwRL._SX342_.jpg",
-        price: `$99.99`,
+        price: `99.99`,
         name: `PlayStation 4 Slim 1TB Console`,
         desc: `Incredible games; Endless entertainment
         All new lighter slimmer PS4
@@ -246,7 +246,7 @@ export default[
     {
         id: 16,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71OVkv3tRKL._AC_SY355_.jpg",
-        price: `$279.99`,
+        price: `279.99`,
         name: `Edifier M601DB Bookshelf Speakers with 8 Inch Wireless Subwoofer, 2.1 Computer Speaker System Bluetooth 5.1 AptX, 110W RMS, Black`,
         desc: `POWERFUL WIRELESS SUBWOOFER - Two compact satellites and an 8-inch wireless subwoofer delivers 220W of peak power to help complete an immersive and all-encompassing audio experience like no other.
         VERSATILE CONNECTIVITY - Line In, AUX, Optical, Coaxial, Bluetooth 5.1 with AptX connection options to easily connect to your computer, tablet, mobile phone, TV, or any other compatible devices.
@@ -262,7 +262,7 @@ export default[
     {
         id: 17,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61qw1PevupL._AC_SX425_.jpg",
-        price: `$529.00`,
+        price: `529.00`,
         name: `HP Newest Flagship 15.6 HD Pavilion Laptop for Business and Student, Intel Pentium Quad-Core Processor, 16GB RAM, 1TB SSD, Online Conferencing, Webcam, HDMI, WiFi, Bluetooth, Fast Charge, Win11, Red`,
         desc: `15.6 HD Micro-edge display With virtually no bezel encircling the display, an ultra-wide viewing experience provides for seamless multi-monitor set-ups. Enjoy your entertainment with the great quality and highdefinition detail of 1 million pixels.
         【Quad-core Intel Pentium Silver N5000】The perfect combination of performance, power consumption, and value helps your device run smoothly. 1.1 GHz base frequency, up to 2.7 GHz burst frequency, 4 MB cache.
@@ -276,7 +276,7 @@ export default[
     {
         id: 18,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71zBGwi8X7L._AC_SX425_.jpg",
-        price: `$389.00`,
+        price: `389.00`,
         name: `HP 2022 15.6" HD BrightView Laptop, Intel Pentium Silver N5030 Processor, 8GB RAM, 256GB PCIe SSD, Intel HD Graphics 605, 720p HD Webcam, Stereo Speakers, Silver, Windows 11, 32GB USB Card`,
         desc: `Upgraded Seal is opened for upgrade only, 1-Year warranty on Upgraded RAM/SSD from Snow Bell, and original 1-Year Manufacture warranty on remaining components. 15.6'' HD BrightView Display 1366 x 768 resolution boasts impressive color and clarity. Anti-glare Energy-efficient LED screen
         Intel Pentium Silver N5030 Processor Ultra-low-voltage platform. 4-core, 8-way processing provides maximum high-efficiency power to go. Stereo Speakers & 720p HD camera with Built-in microphone
@@ -290,7 +290,7 @@ export default[
     {
         id: 19,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61lYIKPieDL._AC_SX522_.jpg",
-        price: `$1,948.64`,
+        price: `1,948.64`,
         name: `Apple 2023 MacBook Pro Laptop M2 Pro chip with 10-core CPU and 16-core GPU: 14.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 512GB SSD Storage. Works with iPhone/iPad; Space Gray`,
         desc: `SUPERCHARGED BY M2 PRO OR M2 MAX — Take on demanding projects with the M2 Pro or M2 Max chip. M2 Pro has up to 12 CPU cores, up to 19 GPU cores, and up to 32GB unified memory. M2 Max has 12 CPU cores, up to 38 GPU cores, and up to 96GB unified memory.
         UP TO 18 HOURS OF BATTERY LIFE — Go all day thanks to the power-efficient design of the M2 Pro or M2 Max chip. And the MacBook Pro laptop delivers exceptional performance whether it’s running on battery or plugged in.
@@ -304,7 +304,7 @@ export default[
     {
         id: 20,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61bwiPRcv2L._AC_SX679_.jpg",
-        price: `$2,449.00`,
+        price: `2,449.00`,
         name: `Apple 2023 MacBook Pro Laptop M2 Pro chip with 12-core CPU and 19-core GPU: 16.2-inch Liquid Retina XDR Display, 16GB Unified Memory, 512GB SSD Storage. Works with iPhone/iPad; Silver`,
         desc: `SUPERCHARGED BY M2 PRO OR M2 MAX — Take on demanding projects with the M2 Pro or M2 Max chip. M2 Pro has 12 CPU cores, 19 GPU cores, and up to 32GB unified memory. M2 Max has 12 CPU cores, up to 38 GPU cores, and up to 96GB unified memory.
         UP TO 22 HOURS OF BATTERY LIFE — Go all day thanks to the power-efficient design of the M2 Pro or M2 Max chip. And the MacBook Pro laptop delivers exceptional performance whether it’s running on battery or plugged in.
@@ -318,7 +318,7 @@ export default[
     {
         id: 21,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/6123waaCQ0L._AC_SX425_.jpg",
-        price: `$19.97`,
+        price: `19.97`,
         name: `Big Rig Defense Tire Thumper, Trucker Tool for Checking Tire Pressure, 10.0 Ounces`,
         desc: `HICKORY STICK TIRE THUMPER FOR TRUCKERS: 17.75" length and 1.25" diameter Hickory and metal tire thumper and tire pressure checker. Also functions as a fish whacker for your next fishing trip.
         THE QUICKEST WAY TO CHECK TRUCK TIRES: This handy tool makes checking multiple tires a breeze so you can get back on the road quickly and safely. Simply give your tires a good whack and listen for a reassuring thump and feel your stick bounce off a fully inflated tire.
@@ -334,7 +334,7 @@ export default[
     {
         id: 22,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41dCUCgwb0L._AC_SX425_.jpg",
-        price: `$16.95`,
+        price: `16.95`,
         name: `HyperWhistle The Original Worlds Loudest Whistle up to 142db Loud, Very Long Range, for Referee, Coaches, Instructors, Sports, Teachers, Life Guard, Self Defense, Survival, Emergency uses`,
         desc: `SUPER LOUD- Up to 142dB for 2+ mile 8x range of a common sports whistle
         Includes re-usable hearing protectors and easy clip neck lanyard
@@ -350,7 +350,7 @@ export default[
     {
         id: 23,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91TRNJZibzL._AC_SX522_.jpg",
-        price: `$1200.67`,
+        price: `1200.67`,
         name: `Crosman SNR357 Snub Nose .177-Caliber Pellet/ BB CO2-Powered Revolver`,
         desc: `SNR357 - Sleek black, heavy-weight, full-metal body
         FUELED BY A 12-GRAM CO2 CARTRIDGE - Delivers speeds up to 400 fps with BBs and 500 fps with .177 caliber pellets (CO2 not included)
@@ -368,7 +368,7 @@ export default[
     {
         id: 24,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71J+cRi2AJS._AC_SX425_.jpg",
-        price: `$700.67`,
+        price: `700.67`,
         name: `Sabre Pepper Spray & 3-in-1 Stun Gun with Flashlight and Anti-Grab Bar Technology, Self Defense Kit, 35 Bursts, 10 Ft (3 m) Range, 120 Lumens LED Light, Rechargeable Battery (Set of 2)`,
         desc: `TRUST THE PROFESSIONALS: SABRE is the #1 Pepper Spray brand trusted by police and consumers worldwide; The strength of SABRE stun guns are independently tested to ensure reliable protection when you need it most
         5X MORE PROTECTION: 42% of crimes are committed by multiple assailants - this pepper spray has 35 bursts and a true 10-foot range delivered in a powerful stream from nozzle to the target's eyes while decreasing wind blowback;Built-in clip for easy carrying
@@ -383,7 +383,7 @@ export default[
     {
         id: 25,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71w8kX8t1bL._AC_SY355_.jpg",
-        price: `$21.95`,
+        price: `21.95`,
         name: `Stocking Stuffers Gifts for Men Him Grandpa Dad Husband Boyfriend Women Cool Gadgets 14 in 1 Multitool Hatchet Hammer with Long Handle for Christmas Birthday`,
         desc: `【All-in-One Compact and Versatile Multitool】 Sunkoon multipurpose tool includes almost all the tools needed for daily and camping field operations. Convenient to use around the house, outdoor, hiking, camping, Cycling, fishing, hunting, backpacking, truck car. Efficient compact camping small multitool. It can be carried in your pocket or belt. It doesn't take up space and save time. Ready for On The Go.
         【Cool Unique Gift Idea for Him】 Great choice as a gift for outdoor camping and hiking lovers. Perfect practical GIFTS for yourself or others. Great Anniversary gifts for father, dad, boyfriend, husband, grandfather, brother, uncle, boy, son, friend and teacher, Father's Day, birthday, Christmas. this Best Personalized mens gifts just for men`,
@@ -396,7 +396,7 @@ export default[
     {
         id: 26,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61A3g16SKwL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-        price: `$29.95`,
+        price: `29.95`,
         name: `Cold Steel Baseball Bat Brooklyn Crusher (92BSS), Black 29 inch`,
         desc: `29in Length/ 33oz Weight
         Will never break, rot, crack, splinter, or fade
@@ -412,7 +412,7 @@ export default[
     {
         id: 27,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51ozYT2cPrS._AC_SX425_.jpg",
-        price: `$26`,
+        price: `26`,
         name: `Bear Paws The Original Shredder Claws - Made in The USA - Easily Lift, Handle, Shred, and Cut Meats - Ultra-Sharp Blades and Heat Resistant Nylon`,
         desc: `TIME SAVER - Bear Paws are the answer to perfectly shredded meat without the mess and headache of knives and forks. Easily grasp and shred pork, chicken, beef, and more with the ultra-sharp claws.
         MELTPROOF and DISHWASHER SAFE - Made of BPA-free nylon and heat-resistant up to 475 degrees. Never worry about your shredding tools melting near the grill or in the dishwasher.
@@ -426,7 +426,7 @@ export default[
     {
         id: 28,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81FWNXaX+vL._AC_SX450_.jpg",
-        price: `$120`,
+        price: `120`,
         name: `Smith & Wesson Extreme Ops SWA24S 7.1in S.S. Folding Knife with 3.1in Serrated Clip Point Blade and Aluminum Handle for Outdoor, Tactical, Survival and EDC`,
         desc: `Dimensions: 7.1 Inch (18 Cm) Overall Length With A Blade Length Of 3.1 Inches (7.9 Cm) And A Weight Of 3.5 Ounces
         Durable: Blade Is Made Of Reliable 7Cr17Mov Black Oxide High Carbon Stainless Steel With A Black, Aluminum Handle
@@ -441,7 +441,7 @@ export default[
     {
         id: 29,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61UpIhk9W9L._AC_SX450_.jpg",
-        price: `$1200`,
+        price: `1200`,
         name: `APOC Survival Katana, Black`,
         desc: `Made in China
         Package height :99.06 cm
@@ -457,7 +457,7 @@ export default[
     {
         id: 30,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61YTlRsATWL._AC_SX569_.jpg",
-        price: `$3000`,
+        price: `3000`,
         name: `Bushmaster BMPWX Full Auto CO2-Powered BB Air Rifle And Red Dot Sight, Black/FDE`,
         desc: `FULL SIZE, REAL FEEL, DUAL ACTION - Durable synthetic design and up to 1400 rounds per minute
         FUELED BY (2) 12-GRAM CO2 CARTRIDGES - Delivers speeds up to 430 fps (CO2 cartridges not included)

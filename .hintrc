@@ -12,6 +12,7 @@
   ],
   "hints": {
     "apple-touch-icons": "off",
-    "manifest-file-extension": "off"
+    "manifest-file-extension": "off",
+    "detect-css-reflows/layout": "off"
   }
 }
