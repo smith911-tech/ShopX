@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import data from '../Components/Data file/Data'
 
+console.log(data)
 export default function BodyHome() {
     return(
         <article className="bodyhomearticle">

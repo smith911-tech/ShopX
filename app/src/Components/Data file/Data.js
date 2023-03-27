@@ -7,7 +7,7 @@ export default[
         desc: `63% Cotton, 37% Polyester imported
         Pull On closure
         Machine Wash
-        VINTAGE STYLE: Since the 19th Century, hardworking men of all classes including loggers and hunters have been wearing thermal undershirts as cold weather essentials, our updated thermal henley shirt will fulfill your need for both function and fashion
+        VINTAGE STYLE: Since the 19th Century, hardworking men of all classes including loggers and hunters have been wearing thermal undershirt as cold weather essentials, our updated thermal henley shirt will fulfill your need for both function and fashion
         WARM & COMFORTABLE: Made from 11 oz cotton/poly double layer thermal fabric; bonded construction traps air between the layers to retain warmth
         VERSATILE: Our three button henley is easy to pull on and off for variable temperature control, thick enough to be worn alone or as a baselayer
         RELAXED FIT: This henley includes the right amount of room in all the right places, layers perfectly under the Tough as Buck vests and jackets and the split hem allows it to be worn tucked in or untucked
@@ -16,7 +16,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91SYg+nNVwL._AC_UL1500_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/416FJ+qGASL._AC_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41c57NfAMPL._AC_.jpg",
-        category: "shirts"
+        category: "shirt"
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71WpbAbCxbL._AC_UL1301_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61KHmWA3xqL._AC_UL1301_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/618GefVLsvL._AC_UL1001_.jpg",
-        category: "shirts"
+        category: "shirt"
     },
     {
     id: 3,
@@ -52,7 +52,7 @@ export default[
     img2: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41zShN2CEcL._AC_UL1500_.jpg",
     img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81kZzP9g03L._AC_UL1500_.jpg",
     img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71oPswYtxRL._AC_UL1500_.jpg",
-    category: "trousers"
+    category: "trouser"
     },
     {
         id: 4,
@@ -70,7 +70,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51i3+aKGrFL._AC_UL1280_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51g8wwtNjaL._AC_UL1280_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71rZyhPLVpL._AC_UL1280_.jpg",
-        category: "trousers"
+        category: "trouser"
     },
     {
         id: 5,
@@ -88,7 +88,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/716Htx4xkDL._AC_UL1500_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/819qaiUyqjL._AC_UL1500_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81Mv8DR-9iL._AC_UL1500_.jpg",
-        category: "shoes"
+        category: "shoe"
     },
     {
         id: 6,
@@ -106,7 +106,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71Wz1jvZANL._AC_UL1500_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81IDPyKJoZL._AC_UL1500_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/8159juQB1KL._AC_UL1500_.jpg",
-        category: "shoes"
+        category: "shoe"
     },
     {
         id: 7,
@@ -124,7 +124,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71bP-0CABDL._AC_UL1500_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71umP9PWh3L._AC_UL1500_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71hJsneat2L._AC_UL1500_.jpg",
-        category: "shirts"
+        category: "shirt"
     },
     {
         id: 8,
@@ -142,7 +142,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/715RgGGbftL._AC_UL1010_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/5193Zpap5yL._AC_UL1010_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61ACJN1BcdL._AC_UL1010_.jpg",
-        category: "shorts"
+        category: "short"
     },
     {
         id: 9,
@@ -150,7 +150,7 @@ export default[
         price: `22.97`,
         name: `Nike Men's Soccer Park III Shorts`,
         desc: `100% Polyester`,
-        category: "shorts"
+        category: "short"
     },
     {
         id: 10,
@@ -168,7 +168,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/718SKxi2AHS._AC_UL1500_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71fjpDzZFKS._AC_UL1000_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71eJWgLwBhL._AC_UL1200_.jpg",
-        category: "shorts"
+        category: "short"
     },
     {
         id: 11,
@@ -210,7 +210,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81cDUwLu3cL._AC_SY355_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71EW307EANL._AC_SY355_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71whD5fwekL._AC_SY355_.jpg",
-        category: "speakers"
+        category: "speaker"
     },
     {
         id: 14,
@@ -257,7 +257,7 @@ export default[
         img3: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71yqpLR6asS._AC_SY355_.jpg",
         img4: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81tUsrr5b1L._AC_SX355_.jpg",
         img5: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61+tnMzvcNS._AC_SY355_.jpg",
-        category: "speakers"
+        category: "speaker"
     },
     {
         id: 17,

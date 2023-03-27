@@ -3,7 +3,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router-dom";
+
 export default function Header() {
+    const Navigate = useNavigate()
+    function SearchPageHandleClick() {
+        Navigate('/SearchPage')
+}
     return(
         <header className="Home-header">
             <div className="Div-underhome">
@@ -32,6 +38,7 @@ export default function Header() {
                 type="search" 
                 name="" 
                 id=""
+                onClick={SearchPageHandleClick}
                 placeholder="Search Products"
                 />
                 <i className="fa-solid fa-magnifying-glass"></i>
