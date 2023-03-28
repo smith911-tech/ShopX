@@ -10,7 +10,7 @@ export default function SearchPage(){
         Navigate('/')
     }
     const handleSearch = () => {
-    const filtered = data.filter(item => item.category === InputValue);
+    const filtered = data.filter(item => item.category === InputValue.toLowerCase());
     setSearchData(filtered);
     }
     return(
