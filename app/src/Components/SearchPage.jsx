@@ -41,17 +41,18 @@ export default function SearchPage(){
             </div>
             </div>
 </div>
+        <article className="search-items-carrier">
             {SearchData.map(item => (
-            <div key={item.id}>
-            <div className="Search-div-carrier">
-            <img src={item.img} alt="" />
+            <div key={item.id} className="Search-div-carrier">
+            <img className="img-searchside" src={item.img} alt="" />
             <div className="name-price">
             <h3>{item.name}</h3>
-            <p><sup>$</sup>{item.price}</p>
-            </div>
+            <p className="price-search"><sup>$</sup>{item.price}</p>
+            <p className="addtocartsearch">Add to Cart</p>
             </div>
             </div>
             ))}
+            </article>
     <div className="pushfooterdown"></div>
             <Footer />
         </>
