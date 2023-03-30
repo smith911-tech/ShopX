@@ -1,5 +1,6 @@
 import { Navigation, Autoplay } from "swiper";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -7,6 +8,11 @@ import data from '../Components/Data file/Data'
 
 console.log(data)
 export default function BodyHome() {
+    const Navigate = useNavigate()
+    
+    function HandleNavigate(id) {
+    Navigate(`/Details/${id}`);
+    }
     return(
         <article className="bodyhomearticle">
 {/* !!!!!!!!!!  first swiper */}
@@ -59,7 +65,7 @@ export default function BodyHome() {
     <h3 className="title-text-body">{item.name}</h3>
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img"/>
-    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p className="seemore-text">See More</p></div>
+    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p></div>
     </SwiperSlide> 
         ))}
 </Swiper>
@@ -117,7 +123,7 @@ export default function BodyHome() {
     <h3 className="title-text-body">{item.name}</h3>
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img"/>
-    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p className="seemore-text">See More</p></div>
+    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p></div>
     </SwiperSlide> 
         ))}
 </Swiper>
@@ -175,7 +181,7 @@ export default function BodyHome() {
     <h3 className="title-text-body">{item.name}</h3>
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img"/>
-    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p className="seemore-text">See More</p></div>
+    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p></div>
     </SwiperSlide> 
         ))}
 </Swiper>
