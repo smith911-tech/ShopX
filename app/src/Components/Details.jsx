@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from "react"
+import React, {useState, useEffect} from "react"
 import Data from '../Components/Data file/Data'
 import { useParams } from "react-router-dom"
 export default function Details() {
@@ -27,10 +27,8 @@ export default function Details() {
     };
     return(
         <>
-        <div>
         <div className="details-header">
         <h3>ShopX</h3>
-        </div>
         </div>
         <main className="padding-main-details">
             <div className="div-img-carrier-details-page">
@@ -59,9 +57,16 @@ export default function Details() {
 
             <aside className="price-addtocart-buynow">
                 <h3 className="price-cartside-buyside"><sup>$</sup>{data.price}</h3>
+                <hr />
                 <div className="btns-cartside">
                     <button className="addtocart">Add To Cart</button>
                     <button className="buytocart">Buy Now</button>
+                    <div className="ad-div1">
+                    <a href="https://indomie.ng/">
+                    <img className="ad1" src="https://th.bing.com/th/id/R.deeee01e726f182766c082d8b1fcf6fc?rik=ri8TyFhDYgelvw&pid=ImgRaw&r=0" alt="" />
+                    <p>Ad</p>
+                    </a>
+                    </div>
                 </div>
             </aside>
         </main>
