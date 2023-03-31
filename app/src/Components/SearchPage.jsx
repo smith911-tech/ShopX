@@ -13,6 +13,9 @@ export default function SearchPage(){
     const filtered = data.filter(item => item.category === InputValue.toLowerCase());
     setSearchData(filtered);
     }
+    function HandleNavigate(id) {
+    Navigate(`/Details/${id}`);
+    }
     return(
         
         <>
