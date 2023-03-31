@@ -337,39 +337,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     font-weight: 900;
 }
-.namedata-details{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.pricedata-details{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-}
-.descdata-details{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.buytocart, .addtocart{
-    width: 30%;
-    padding: 5px 0;
-    border: none;
-    display: block;
-    margin: 0 auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.buytocart{
-    background-color: #FFA41C;
-}
-.addtocart{
-    background-color: #ffd814;
-}
-.btns-cartside{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 /* ? end of search page !*/
 
 /* ! details data page*/
@@ -412,6 +380,46 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 100%;
     padding: 30px 0;
     object-fit: contain;
+}
+.namedata-details {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pricedata-details {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.descdata-details {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.buytocart, .addtocart {
+    width: 30%;
+    padding: 5px 0;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.buytocart {
+    background-color: #FFA41C;
+}
+.addtocart {
+    background-color: #ffd814;
+}
+.btns-cartside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price-addtocart-buynow{
+    border: 0.4px solid black;
+    padding: 0 10px 20px 10px;
 }
 /* ? end details data page*/
 
@@ -467,4 +475,23 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             gap: 20px;
         }
         /* ? end of search page !*/
+        
+}
+@media screen and (min-width: 768px) {
+    /* ! details data page*/
+    .padding-main-details{
+        display: flex;
+        gap: 10px;
+    }
+    .div-img-carrier-details-page{
+        width: 40%;
+    }
+    .namedescprice-details{
+        width: 30%;
+    }
+    .price-addtocart-buynow{
+        width: 30%;
+    }
+
+    /* ? end details data page*/
 }
