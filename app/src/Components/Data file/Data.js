@@ -202,7 +202,7 @@ export default[
     {
         id: 13,
         img: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/615E19-3X0L._AC_SY355_.jpg",
-        price: `#179.99`,
+        price: `179.99`,
         name: `Bobtot Home Theater Systems Surround Sound Speakers - 800 Watts 6.5 inch Subwoofer 5.1/2.1 Channel Home Audio Stereo System with HDMI ARC Optical Bluetooth Input for 4K TV Ultra HD AV DVD FM Radio USB`,
         desc: `5.1 Channel Surround Stereo Sound: Bobtot surround sound system has two modes of 5.1/2.1 channel, switch via remote control or front panel. Pro surround function provides you with more advanced enjoyment. Via the Remote you can also independently control the volume of each speaker and the subwoofer
         800 Watts Peak Power: Home theater system speakers can reach up to 800 watts of power, 6.5 inch Subwoofer with a built-in receiver, high volume but with professional sound quality and excellent bass sound, deliver the cleanest, most natural sound possible. Bring you and your family with full cinema experience at home`,

@@ -12,8 +12,10 @@ export default function Details() {
     }, [id]);
     return(
         <>
+        <div>
         <div className="details-header">
         <h3>ShopX</h3>
+        </div>
         </div>
         <main className="padding-main-details">
             <div className="div-img-carrier-details-page">
@@ -32,6 +34,19 @@ export default function Details() {
                 <img id="img5" src={data.img5} alt="img" />
                 </div>
             </div>
+            <aside className="namedescprice-details">
+                <h3  className="namedata-details">{data.name}</h3>
+                <h3  className="pricedata-details"><sup>$</sup>{data.price}</h3>
+                <p className="descdata-details">{data.desc}</p>
+            </aside>
+
+            <aside className="price-addtocart-buynow">
+                <h3 className="price-cartside-buyside"><sup>$</sup>{data.price}</h3>
+                <div className="btns-cartside">
+                    <button className="addtocart">Add To Cart</button>
+                    <button className="buytocart">Buy Now</button>
+                </div>
+            </aside>
         </main>
         </>
     )

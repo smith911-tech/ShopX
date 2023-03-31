@@ -337,12 +337,47 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     font-weight: 900;
 }
+.namedata-details{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pricedata-details{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+.descdata-details{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buytocart, .addtocart{
+    width: 30%;
+    padding: 5px 0;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.buytocart{
+    background-color: #FFA41C;
+}
+.addtocart{
+    background-color: #ffd814;
+}
+.btns-cartside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* ? end of search page !*/
 
 /* ! details data page*/
 .details-header{
     background-color: #e1ad2d;
     padding: 1px 5%;
+    position: fixed;
+    width: 100%;
 }
 .details-header h3{
     color: white;
@@ -359,7 +394,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 5px;
 }
 .padding-main-details{
-    padding: 20px 2%;
+    padding: 100px 2% 10px 2%;
 }
 .div-img-carrier-details-page{
     display: flex;
@@ -374,9 +409,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .flex-tagsimg img{
     width: 100%;
+    height: 100%;
     padding: 30px 0;
+    object-fit: contain;
 }
 /* ? end details data page*/
+
 @media screen and (max-width: 768px) {
     /* ! Header media query */
     .Div-underhome {
