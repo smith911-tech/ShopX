@@ -421,14 +421,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     gap: 10px;
 }
 .price-addtocart-buynow{
-    border: 0.4px solid black;
     padding: 0 10px 20px 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.479);
 }
 .ad1{
     width: 100%;
 }
 .ad-div1{
     position: relative;
+    margin-top: 10%;
 }
 .ad-div1 p{
     position: absolute;
@@ -513,6 +514,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     .price-addtocart-buynow{
         width: 30%;
     }
-
+    .price-addtocart-buynow {
+    border: 0px ;
+}
     /* ? end details data page*/
 }
