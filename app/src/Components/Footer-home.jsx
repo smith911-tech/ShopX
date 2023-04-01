@@ -25,7 +25,7 @@ export default function Footer() {
         <footer className='footer-home'>
         <h1 className='logo-text'>Shop X</h1>
 <div className='input-email-div'>
-    <form action="" ref={form} onSubmit={handleSubmit}>
+    <form action="" ref={form} onSubmit={handleSubmit}> 
         <input type="email" name="user_email" id="" placeholder='Your Email'
         value={emailValue}
         onChange={(e) => setEmailValue(e.target.value)}
