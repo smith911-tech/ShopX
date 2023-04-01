@@ -1,6 +1,8 @@
 import cartdancing from '../Image/cartdancing.gif'
 import emailjs, { send } from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function Footer() {
      const [emailValue, setEmailValue] = useState("");
         const form = useRef();
@@ -8,8 +10,18 @@ export default function Footer() {
     const sendEmail = () => {
         emailjs.sendForm('service_2w9848g', 'template_w9vw6uv', form.current, 'VXcDGbMDiLEEGa3aE')
         .then((result) => {
-            console.log(result.text);
-                    setEmailValue("");
+        console.log(result.text);
+        setEmailValue("");
+        toast.success('Sent Sucessfully', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
         }, (error) => {
             console.log(error.text);
         });
@@ -44,6 +56,18 @@ export default function Footer() {
 <p className='copy-name'>&copy;2023 Done By Williams Joseph</p>
         </footer>
 <br /><br /><br /><br />
+    <ToastContainer
+    position="top-center"
+    autoClose={3000}
+    hideProgressBar={true}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="dark"
+    />
         </>
     )
 }

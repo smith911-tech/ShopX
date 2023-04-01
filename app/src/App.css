@@ -246,8 +246,8 @@ font-weight: 900;
 .input-email-div button{
     background-color: #252525;
     color: #f26522;
-    outline: none;
     border: none;
+    cursor: pointer;
 }
 .under-subscribe-footer{
     color: white;
