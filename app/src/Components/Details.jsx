@@ -33,18 +33,18 @@ export default function Details() {
         <main className="padding-main-details">
             <div className="div-img-carrier-details-page">
                 <aside className="aside-img-clickable">
-                <img onClick={handleImageClick1} src={data.img} alt="img" />
-                <img onClick={handleImageClick2} src={data.img2} alt="img" />
-                <img onClick={handleImageClick3} src={data.img3} alt="img" />
-                <img onClick={handleImageClick4} src={data.img4} alt="img" />
-                <img onClick={handleImageClick5} src={data.img5} alt="img" />
+                <img onClick={handleImageClick1} src={data.img} />
+                <img onClick={handleImageClick2} src={data.img2} />
+                <img onClick={handleImageClick3} src={data.img3} />
+                <img onClick={handleImageClick4} src={data.img4} />
+                <img onClick={handleImageClick5} src={data.img5} />
                 </aside>
                 <div className="flex-tagsimg">
-                <img id="myid1" src={data.img} alt="img" />
-                <img id="myid2" src={data.img2} alt="img" />
-                <img id="myid3" src={data.img3} alt="img" />
-                <img id="myid4" src={data.img4} alt="img" />
-                <img id="myid5" src={data.img5} alt="img" />
+                <img id="myid1" src={data.img} />
+                <img id="myid2" src={data.img2} />
+                <img id="myid3" src={data.img3} />
+                <img id="myid4" src={data.img4} />
+                <img id="myid5" src={data.img5} />
                 </div>
             </div>
             <aside className="namedescprice-details">

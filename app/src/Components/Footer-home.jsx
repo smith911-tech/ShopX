@@ -57,6 +57,7 @@ export default function Footer() {
         </footer>
 <br /><br /><br /><br />
     <ToastContainer
+    toastStyle={{ width: '200px' }}
     position="top-center"
     autoClose={3000}
     hideProgressBar={true}
