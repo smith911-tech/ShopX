@@ -9,9 +9,9 @@ import data from '../Components/Data file/Data'
 console.log(data)
 export default function BodyHome() {
     const Navigate = useNavigate()
-    
     function HandleNavigate(id) {
     Navigate(`/Details/${id}`);
+    window.scrollTo(0, 0);
     }
     return(
         <article className="bodyhomearticle">

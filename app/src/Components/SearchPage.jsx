@@ -15,6 +15,7 @@ export default function SearchPage(){
     }
     function HandleNavigate(id) {
     Navigate(`/Details/${id}`);
+    window.scrollTo(0, 0);
     }
     return(
         
@@ -22,7 +23,7 @@ export default function SearchPage(){
         <div className="search-page-flows">
             <h2> <i onClick={BacktoHomepage} class="fa-solid fa-arrow-left fa-beat"></i></h2>
                 <div className='cart-account-home display-none-cart colori'>
-                <h3><i className="fa-solid fa-cart-shopping"></i></h3>
+                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
 
@@ -38,9 +39,9 @@ export default function SearchPage(){
                 />
                 <i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
             </article>
-            <div className='cart-account-home colori'>
-                <h3 className=""><i className="fa-solid fa-cart-shopping"></i>  Cart</h3>
-                <h3><i class="fa-solid fa-user"></i>  Account</h3>
+            <div className='cart-account-home colori change-cartcolor-plusaccount-color'>
+                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
+                <h3><i class="fa-solid fa-user"></i></h3>
             </div>
             </div>
 </div>

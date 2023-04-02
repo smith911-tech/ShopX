@@ -9,6 +9,7 @@ export default function Header() {
     const Navigate = useNavigate()
     function SearchPageHandleClick() {
         Navigate('/SearchPage')
+        window.scrollTo(0, 0);
 }
     return(
         <header className="Home-header">
@@ -28,7 +29,7 @@ export default function Header() {
             </div>
             <h1 className="logo-text">ShopX</h1>
             <div className='cart-account-home display-none-cart'>
-                <h3><i className="fa-solid fa-cart-shopping"></i></h3>
+                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
         <div className="Img-cart-search">
@@ -44,7 +45,8 @@ export default function Header() {
                 <i className="fa-solid fa-magnifying-glass"></i>
             </article>
             <div className='cart-account-home'>
-                <h3><i className="fa-solid fa-cart-shopping"></i>  Cart</h3>
+                
+                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span>  Cart</h3>
                 <h3><i class="fa-solid fa-user"></i>  Account</h3>
             </div>
             </div>
@@ -74,5 +76,6 @@ export default function Header() {
     </Swiper>
         </div>
         </header>
+        
     )
 }
