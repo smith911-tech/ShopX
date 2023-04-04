@@ -11,6 +11,9 @@ export default function Header() {
         Navigate('/SearchPage')
         window.scrollTo(0, 0);
 }
+    function CartPage() {
+        Navigate("/Cart")
+    }
     return(
         <header className="Home-header">
             <div className="Div-underhome">
@@ -30,7 +33,7 @@ export default function Header() {
             <h1 className="logo-text">ShopX</h1>
             <div className='cart-account-home display-none-cart'>
                 <h3><span className="position-icon">
-                    <i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
+                    <i onClick={CartPage} className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
         <div className="Img-cart-search">

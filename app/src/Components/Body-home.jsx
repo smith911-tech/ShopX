@@ -13,6 +13,15 @@ export default function BodyHome() {
     Navigate(`/Details/${id}`);
     window.scrollTo(0, 0);
     }
+    const [cartItems, setCartItems] = useState([])
+    const addToCart = (item) => {
+    const itemExists = cartItems.some((cartItem) => cartItem.id === item.id);
+    if (!itemExists) {
+        const updatedCartItems = [...cartItems, item];
+        setCartItems(updatedCartItems);
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+    }
+    };
     return(
         <article className="bodyhomearticle">
 {/* !!!!!!!!!!  first swiper */}
@@ -66,7 +75,7 @@ export default function BodyHome() {
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img"/>
     <div className="bottom-text"> 
-    <p className="buynow-text" >Buy Now</p> 
+    <p onClick={() => addToCart(item)} className="buynow-text" >Buy Now</p> 
     <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p>
     </div>
     </SwiperSlide> 
