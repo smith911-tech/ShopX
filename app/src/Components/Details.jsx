@@ -29,6 +29,8 @@ export default function Details() {
         <>
         <div className="details-header">
         <h3>ShopX</h3>
+        <h3><span className="position-icon detail-arrange-header">
+        <i className="fa-solid fa-cart-shopping"></i> <span className="number-icon-cart">0</span></span></h3>
         </div>
         <main className="padding-main-details">
             <div className="div-img-carrier-details-page">

@@ -3,6 +3,9 @@ export default function Cart(){
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || []
     return(
         <>
+        <header className="header-cart">
+
+        </header>
             {
                 cartItems.map((item) => (
                     <div className="flex-cart-page" key={item.id}>

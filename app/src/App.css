@@ -4,47 +4,54 @@ body{
     padding: 0;
 }
 /* ! header */
-.Div-underhome{
+.Div-underhome {
     border-style: solid;
     position: relative;
     width: 80%;
-    border-color:#2b2a29 transparent;
+    border-color: #2b2a29 transparent;
     border-width: 60px 28px 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     color: white;
 }
-.Div-underhome {
+
+.Div-underhome h3 {
     margin: 0 auto;
     margin-top: -45px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.Div-underhome h3:hover{
+
+.Div-underhome h3:hover {
     color: crimson;
     transition: 300ms ease-in-out;
 }
-.Home-header{
+
+.Home-header {
     background: linear-gradient(to top, rgba(255, 255, 255, 0.947), #e1ad2d, #e1ad2d);
     padding: 0 20px;
 }
-.logo-text{
+
+.logo-text {
     color: white;
     padding-top: 30px 0;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
 }
-.Img-cart-search{
+
+.Img-cart-search {
     background: url("./Image/headerimage.png") no-repeat;
     background-position: center center;
     height: 550px;
     width: 100%;
 }
-.search-button{
+
+.search-button {
     display: flex;
 }
-.search-button input{
+
+.search-button input {
     height: 40px;
     border: none;
     outline: none;
@@ -54,8 +61,9 @@ body{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-left: 15px;
-    
+
 }
+
 .search-button i {
     background-color: #f26522;
     color: white;
@@ -65,23 +73,42 @@ body{
     cursor: pointer;
     height: 20px;
 }
-.flex-header{
+
+.flex-header {
     display: flex;
     justify-content: center;
     gap: 5%;
-    
+
 }
-.cart-account-home h3{
+
+.cart-account-home h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     word-spacing: 5px;
     margin-top: 10px;
 }
-.cart-account-home{
+.cart-account-home {
     display: flex;
     gap: 15px;
 }
-.mySwiperhome{
+.position-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.position-icon .number-icon-cart {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    background-color: #f26522;
+    padding: 0 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mySwiperhome {
     margin-top: 90px;
     color: white;
     text-align: center;
@@ -91,7 +118,8 @@ body{
     font-weight: 900;
     position: relative;
 }
-.mySwiperhome button{
+
+.mySwiperhome button {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -110,36 +138,26 @@ body{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.mySwiperhome button:hover{
+
+.mySwiperhome button:hover {
     background-color: white;
     color: black;
     transition: 100ms;
 }
-.swiper-button-prev, .swiper-button-next{
+
+.swiper-button-prev,
+.swiper-button-next {
     background-color: white;
     padding: 10px;
     margin: 0 10px;
     border-radius: 50%;
     color: black !important;
 }
-.display-none-cart{
+
+.display-none-cart {
     display: none;
 }
-.position-icon{
-    position: relative;
-}
-.position-icon .number-icon-cart{
-    position: absolute;
-    top: -15px;
-    right: -10px;
-    background-color: #f26522;
-    padding: 0 5px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 /*? End of header */
 
 
@@ -505,6 +523,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         top: 30px;
         color: #f26522;
         left: -10px;
+    }
+    .header-cart{
+        background-color: #e1ad2d;
     }
 /* ? End of Cart page */
 @media screen and (max-width: 767px) {
