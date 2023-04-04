@@ -1,5 +1,6 @@
 import HeaderCartDetails from "./Header4Cart-Details"
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer-home";
 export default function Cart(){
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || []
     const Navigate = useNavigate()
@@ -10,6 +11,7 @@ export default function Cart(){
     return(
         <>
         <HeaderCartDetails />
+        <h1 className="Cart-carticon">Cart <i class="fa-sharp fa-solid fa-cart-shopping fa-spin"></i></h1>
             {
                 cartItems.map((item) => (
                     <div className="flex-cart-page" key={item.id}>
@@ -32,6 +34,10 @@ export default function Cart(){
                     </div>
                 ))
             }
+            <br />
+            <button className="proceed-btn">Proceed To Checkout</button>
+            <br /><br /><br />
+            <Footer/>
         </>
     )
 }

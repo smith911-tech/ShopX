@@ -547,6 +547,25 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     .header-cart{
         background-color: #e1ad2d;
     }
+    .Cart-carticon{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f26522;
+    }
+    .proceed-btn{
+        color: white;
+        background-color: #f26522;
+        border: none;
+        padding: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
 /* ? End of Cart page */
 @media screen and (max-width: 767px) {
     /* ! Header media query */
