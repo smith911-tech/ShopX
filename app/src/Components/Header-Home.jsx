@@ -29,7 +29,8 @@ export default function Header() {
             </div>
             <h1 className="logo-text">ShopX</h1>
             <div className='cart-account-home display-none-cart'>
-                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
+                <h3><span className="position-icon">
+                    <i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
         <div className="Img-cart-search">

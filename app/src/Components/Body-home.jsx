@@ -13,11 +13,6 @@ export default function BodyHome() {
     Navigate(`/Details/${id}`);
     window.scrollTo(0, 0);
     }
-    const [cartItems, setCartItems] = useState([])
-
-    function HandleAddToCart(item) {
-        setCartItems((prevItems) => [...prevItems, item])
-    }
     return(
         <article className="bodyhomearticle">
 {/* !!!!!!!!!!  first swiper */}
@@ -71,7 +66,7 @@ export default function BodyHome() {
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img"/>
     <div className="bottom-text"> 
-    <p onClick={() => HandleAddToCart(item)} className="buynow-text" >Buy Now</p> 
+    <p className="buynow-text" >Buy Now</p> 
     <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p>
     </div>
     </SwiperSlide> 
@@ -130,8 +125,11 @@ export default function BodyHome() {
     <SwiperSlide key={index}>
     <h3 className="title-text-body">{item.name}</h3>
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
-    <img className="image-body" src={item.img} alt="img"/>
-    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p></div>
+    <img className="image-body" src={item.img} alt="img" />
+    <div className="bottom-text"> 
+    <p className="buynow-text" >Buy Now</p> 
+    <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p>
+    </div>
     </SwiperSlide> 
         ))}
 </Swiper>
@@ -189,7 +187,10 @@ export default function BodyHome() {
     <h3 className="title-text-body">{item.name}</h3>
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img"/>
-    <div className="bottom-text"> <p className="buynow-text">Buy Now</p> <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p></div>
+    <div className="bottom-text"> 
+    <p  className="buynow-text">Buy Now</p>
+    <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p>
+    </div>
     </SwiperSlide> 
         ))}
 </Swiper>
