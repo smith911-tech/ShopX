@@ -35,6 +35,7 @@ export default function SearchPage(){
                 id=""
                 placeholder="Search Products"
                 value={InputValue}
+                onClick={handleSearch}
                 onChange={(e) => setInputValue(e.target.value)}
                 />
                 <i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
