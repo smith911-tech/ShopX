@@ -15,7 +15,7 @@ body{
     display: flex;
     color: white;
 }
-.Div-underhome h3{
+.Div-underhome {
     margin: 0 auto;
     margin-top: -45px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -449,8 +449,64 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: rgba(255, 255, 255, 0.563);
     background-color: #2525258c;
 }
+
 /* ? end details data page*/
 
+/* ! Cart Page */
+    .flex-cart-page{
+        display: flex;
+        padding: 20px 5%;
+        border-bottom: 1px solid black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 130px;
+    }
+    .flex-cart-page  img{
+        height: 120px;
+        width: 130px;
+        object-fit: contain;
+    }
+    .namecart-page{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 40vmin;
+    }
+    .flex-remove-count{
+        display: flex;
+        gap: 20px;
+    }
+    .count-cart{
+        display: flex;
+        gap: 1px;
+    }
+    .quantity-sub h3, .quantity-add h3, .count h3{
+        background-color: #e1ad2d;
+        padding: 10px;
+        color: white;
+    }
+    .count h3 { 
+        background-color: rgba(0, 0, 255, 0.509);
+        color: white;
+    }
+    .remove-cart{
+        position: relative;
+        top: 40px;
+        text-decoration: underline;
+    }
+    .flex-remove-count{
+        margin-top: -20px;
+        margin-left: 10px;
+    }
+    .quantity-sub, .quantity-add , .count {
+        margin-top: -20px;
+    }
+    .price-cart{
+        position: relative;
+        top: 30px;
+        color: #f26522;
+        left: -10px;
+    }
+/* ? End of Cart page */
 @media screen and (max-width: 767px) {
     /* ! Header media query */
     .Div-underhome {
@@ -530,4 +586,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 0px ;
 }
     /* ? end details data page*/
+}
+@media screen and (min-width: 600px) {
+    /* ! Cart Page */
+    .flex-cart-page {
+        justify-content: center;
+        align-items: center;
+    }
+    
+     /* ? End of Cart page */
 }

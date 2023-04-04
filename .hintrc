@@ -21,6 +21,8 @@
           "meta[name=theme-color]"
         ]
       }
-    ]
+    ],
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
   }
 }
