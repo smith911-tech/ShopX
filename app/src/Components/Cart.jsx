@@ -1,17 +1,21 @@
-
+import HeaderCartDetails from "./Header4Cart-Details"
+import { useNavigate } from "react-router-dom";
 export default function Cart(){
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || []
+    const Navigate = useNavigate()
+    function HandleNavigate(id) {
+    Navigate(`/Details/${id}`);
+    window.scrollTo(0, 0);
+    }
     return(
         <>
-        <header className="header-cart">
-
-        </header>
+        <HeaderCartDetails />
             {
                 cartItems.map((item) => (
                     <div className="flex-cart-page" key={item.id}>
-                    <img src={item.img} alt="" className="img-cartside"/>
+                    <img onClick={() => HandleNavigate(item.id)} src={item.img} alt="" className="img-cartside"/>
                     <div className="count-name-flex">
-                        <p className="namecart-page">{item.name}</p>
+                        <p onClick={() => HandleNavigate(item.id)} className="namecart-page">{item.name}</p>
                         <div className="flex-remove-count">
                         <div>
                         <p>Quantity:</p>

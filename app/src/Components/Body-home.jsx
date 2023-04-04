@@ -136,7 +136,7 @@ export default function BodyHome() {
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img" />
     <div className="bottom-text"> 
-    <p className="buynow-text" >Buy Now</p> 
+    <p onClick={() => addToCart(item)} className="buynow-text" >Buy Now</p> 
     <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p>
     </div>
     </SwiperSlide> 
@@ -197,7 +197,7 @@ export default function BodyHome() {
     <p className="price-text-body"><span className="price-span">Price </span> <sup>$</sup>{item.price}</p>
     <img className="image-body" src={item.img} alt="img"/>
     <div className="bottom-text"> 
-    <p  className="buynow-text">Buy Now</p>
+    <p onClick={() => addToCart(item)} className="buynow-text">Buy Now</p>
     <p onClick={() => HandleNavigate(item.id)} className="seemore-text">See More</p>
     </div>
     </SwiperSlide> 

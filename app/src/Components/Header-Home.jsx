@@ -50,7 +50,7 @@ export default function Header() {
             </article>
             <div className='cart-account-home'>
                 
-                <h3><span className="position-icon"><i onClick={CartPage}className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span>  Cart</h3>
+                <h3 onClick={CartPage}><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span>  Cart</h3>
                 <h3><i class="fa-solid fa-user"></i>  Account</h3>
             </div>
             </div>

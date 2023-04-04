@@ -8,6 +8,10 @@ export default function SearchPage(){
     const Navigate = useNavigate()
     function BacktoHomepage() {
         Navigate('/')
+        window.scrollTo(0, 0);
+    }
+    function CartPage() {
+        Navigate("/Cart")
     }
     const handleSearch = () => {
     const filtered = data.filter(item => item.category === InputValue.toLowerCase());
@@ -23,7 +27,7 @@ export default function SearchPage(){
         <div className="search-page-flows">
             <h2> <i onClick={BacktoHomepage} class="fa-solid fa-arrow-left fa-beat"></i></h2>
                 <div className='cart-account-home display-none-cart colori'>
-                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
+                <h3><span className="position-icon" onClick={CartPage}><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
 

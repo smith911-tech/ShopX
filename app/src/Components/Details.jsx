@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import Data from '../Components/Data file/Data'
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
+import HeaderCartDetails from "./Header4Cart-Details";
 export default function Details() {
     const {id} = useParams()
     const [data, setData] =useState([]);
@@ -25,13 +26,23 @@ export default function Details() {
     const handleImageClick5 = () => {
     document.getElementById("myid5").scrollIntoView({ behavior: "smooth" });
     };
+        const [cartItems, setCartItems] = useState([])
+        const addToCart = (item) => {
+    const itemExists = cartItems.some((cartItem) => cartItem.id === item.id);
+    if (!itemExists) {
+        const updatedCartItems = [...cartItems, item];
+        setCartItems(updatedCartItems);
+        localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+    }
+    };
+        const Navigate = useNavigate()
+        function CartPage() {
+        Navigate("/Cart")
+        window.scrollTo(0, 0);
+    }
     return(
         <>
-        <div className="details-header">
-        <h3>ShopX</h3>
-        <h3><span className="position-icon detail-arrange-header">
-        <i className="fa-solid fa-cart-shopping"></i> <span className="number-icon-cart">0</span></span></h3>
-        </div>
+        <HeaderCartDetails />
         <main className="padding-main-details">
             <div className="div-img-carrier-details-page">
                 <aside className="aside-img-clickable">
@@ -61,8 +72,8 @@ export default function Details() {
                 <h3 className="price-cartside-buyside"><sup>$</sup>{data.price}</h3>
                 <hr />
                 <div className="btns-cartside">
-                    <button className="addtocart">Add To Cart</button>
-                    <button className="buytocart">Buy Now</button>
+                    <button className="addtocart" onClick={() => addToCart(data)}>Add To Cart</button>
+                    <button className="buytocart" onClick={CartPage}>Buy Now</button>
                     <div className="ad-div1">
                     <a href="https://indomie.ng/">
                     <img className="ad1" src="https://th.bing.com/th/id/R.deeee01e726f182766c082d8b1fcf6fc?rik=ri8TyFhDYgelvw&pid=ImgRaw&r=0" alt="" />
