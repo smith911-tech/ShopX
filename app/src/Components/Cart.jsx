@@ -1,6 +1,7 @@
 import HeaderCartDetails from "./Header4Cart-Details"
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer-home";
+import { useState } from "react";
 export default function Cart(){
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || []
     const Navigate = useNavigate()
@@ -8,6 +9,21 @@ export default function Cart(){
     Navigate(`/Details/${id}`);
     window.scrollTo(0, 0);
     }
+    const [quantities, setQuantities] = useState({});
+    const handleIncrement = (itemId) => {
+    setQuantities(prevQuantities => ({
+        ...prevQuantities,
+        [itemId]: Math.min((prevQuantities[itemId] || 0) + 1, 9)
+    }));
+    };
+
+    const handleDecrement = (itemId) => {
+    setQuantities(prevQuantities => ({
+        ...prevQuantities,
+        [itemId]: Math.max((prevQuantities[itemId] || 0) - 1, 1)
+    }));
+    };
+
     return(
         <>
         <HeaderCartDetails />
@@ -22,9 +38,9 @@ export default function Cart(){
                         <div>
                         <p>Quantity:</p>
                         <div className="count-cart">
-                            <div className="quantity-add"><h3>+</h3></div>
-                            <div className="count"><h3>4</h3></div>
-                            <div className="quantity-sub"><h3>-</h3></div>
+                            <div onClick={() => handleIncrement(item.id)} className="quantity-add"><h3>+</h3></div>
+                            <div className="count"><h3>{quantities[item.id] || 1}</h3></div>
+                            <div onClick={() => handleDecrement(item.id)} className="quantity-sub"><h3>-</h3></div>
                         </div>
                         </div>
                     <p className="remove-cart">Remove</p>

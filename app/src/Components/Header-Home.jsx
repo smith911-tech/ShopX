@@ -1,7 +1,7 @@
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
 
@@ -14,6 +14,12 @@ export default function Header() {
     function CartPage() {
         Navigate("/Cart")
     }
+        const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+        setCount(cartItems.length);
+    }, []);
     return(
         <header className="Home-header">
             <div className="Div-underhome">
@@ -33,7 +39,7 @@ export default function Header() {
             <h1 className="logo-text">ShopX</h1>
             <div className='cart-account-home display-none-cart'>
                 <h3><span className="position-icon">
-                    <i onClick={CartPage} className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
+                    <i onClick={CartPage} className="fa-solid fa-cart-shopping"></i>{count > 0 &&<span className="number-icon-cart">{count}</span>}</span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
         <div className="Img-cart-search">
@@ -50,7 +56,7 @@ export default function Header() {
             </article>
             <div className='cart-account-home'>
                 
-                <h3 onClick={CartPage}><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span>  Cart</h3>
+                <h3 onClick={CartPage}><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i> {count > 0 &&<span className="number-icon-cart">{count}</span>} </span>   Cart</h3>
                 <h3><i class="fa-solid fa-user"></i>  Account</h3>
             </div>
             </div>

@@ -538,11 +538,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     .quantity-sub, .quantity-add , .count {
         margin-top: -20px;
     }
+    .quantity-sub, .quantity-add {
+        cursor: pointer;
+    }
     .price-cart{
         position: relative;
         top: 30px;
         color: #f26522;
-        left: -10px;
+        left: -15%;
     }
     .header-cart{
         background-color: #e1ad2d;
@@ -646,6 +649,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 0px ;
 }
     /* ? end details data page*/
+
+    /* ! Cart Page */
+    .price-cart { 
+        left: -10px;
+    }
+    /* ? End of Cart page */
 }
 @media screen and (min-width: 600px) {
     /* ! Cart Page */
@@ -653,6 +662,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         justify-content: center;
         align-items: center;
     }
-    
+    .proceed-btn { 
+        font-size: 20px;
+    }
      /* ? End of Cart page */
 }

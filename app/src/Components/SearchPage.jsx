@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import data from './Data file/Data'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Footer from "./Footer-home"
 export default function SearchPage(){
     const [InputValue, setInputValue] = useState('')
@@ -21,13 +21,19 @@ export default function SearchPage(){
     Navigate(`/Details/${id}`);
     window.scrollTo(0, 0);
     }
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+        setCount(cartItems.length);
+    }, []);
     return(
         
         <>
         <div className="search-page-flows">
             <h2> <i onClick={BacktoHomepage} class="fa-solid fa-arrow-left fa-beat"></i></h2>
                 <div className='cart-account-home display-none-cart colori'>
-                <h3><span className="position-icon" onClick={CartPage}><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
+                <h3><span className="position-icon" onClick={CartPage}><i className="fa-solid fa-cart-shopping"></i>{count > 0 &&<span className="number-icon-cart">{count}</span>}</span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
 
@@ -45,7 +51,7 @@ export default function SearchPage(){
                 <i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
             </article>
             <div className='cart-account-home colori change-cartcolor-plusaccount-color'>
-                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i><span className="number-icon-cart">0</span></span></h3>
+                <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i>{count > 0 &&<span className="number-icon-cart">{count}</span>}</span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>
             </div>
             </div>
