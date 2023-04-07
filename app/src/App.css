@@ -569,6 +569,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: block;
         margin: 0 auto;
     }
+    .SubText::after{
+        content: "-";
+    }
+    .AddText::after{
+        content: "+";
+    }
+    .carticon{
+        width: 33px;
+    }
 /* ? End of Cart page */
 @media screen and (max-width: 767px) {
     /* ! Header media query */

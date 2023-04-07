@@ -2,6 +2,7 @@ import HeaderCartDetails from "./Header4Cart-Details"
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer-home";
 import { useState } from "react";
+import carticon from '../Image/Cart.gif'
 export default function Cart(){
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || []
     const Navigate = useNavigate()
@@ -27,7 +28,7 @@ export default function Cart(){
     return(
         <>
         <HeaderCartDetails />
-        <h1 className="Cart-carticon">Cart <i class="fa-sharp fa-solid fa-cart-shopping fa-spin"></i></h1>
+        <h1 className="Cart-carticon">Cart <img className="carticon" src={carticon} alt="" /></h1>
             {
                 cartItems.map((item) => (
                     <div className="flex-cart-page" key={item.id}>
@@ -38,9 +39,9 @@ export default function Cart(){
                         <div>
                         <p>Quantity:</p>
                         <div className="count-cart">
-                            <div onClick={() => handleIncrement(item.id)} className="quantity-add"><h3>+</h3></div>
+                            <div onClick={() => handleIncrement(item.id)} className="quantity-add"><h3 className="AddText"></h3></div>
                             <div className="count"><h3>{quantities[item.id] || 1}</h3></div>
-                            <div onClick={() => handleDecrement(item.id)} className="quantity-sub"><h3>-</h3></div>
+                            <div onClick={() => handleDecrement(item.id)} className="quantity-sub"><h3 className="SubText"></h3></div>
                         </div>
                         </div>
                     <p className="remove-cart">Remove</p>
