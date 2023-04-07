@@ -527,9 +527,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         color: white;
     }
     .remove-cart{
-        position: relative;
-        top: 40px;
         text-decoration: underline;
+        cursor: pointer;
+        margin-top: 40px;
+        background-color: inherit;
+        border: none;
     }
     .flex-remove-count{
         margin-top: -20px;
@@ -542,10 +544,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         cursor: pointer;
     }
     .price-cart{
-        position: relative;
-        top: 30px;
         color: #f26522;
-        left: -15%;
     }
     .header-cart{
         background-color: #e1ad2d;
@@ -577,6 +576,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .carticon{
         width: 33px;
+    }
+    .remove-price{
+        margin-top: -15px;
     }
 /* ? End of Cart page */
 @media screen and (max-width: 767px) {
