@@ -24,7 +24,6 @@ export default function Cart(){
         [itemId]: Math.max((prevQuantities[itemId] || 0) - 1, 1)
     }));
     };
-
     return(
         <>
         <HeaderCartDetails />
