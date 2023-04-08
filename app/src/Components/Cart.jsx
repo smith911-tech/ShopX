@@ -32,7 +32,7 @@ export default function Cart(){
         const updatedCartItems = cartItems.filter((item) => item.id !== id);
         localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
         setCartItems(updatedCartItems);
-        toast.success('Removed Successfully', {
+        toast.info('Removed Successfully', {
             position: "top-right",
             autoClose: 3000,
             hideProgressBar: false,

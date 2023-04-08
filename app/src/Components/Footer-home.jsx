@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function Footer() {
-     const [emailValue, setEmailValue] = useState("");
+    const [emailValue, setEmailValue] = useState("");
         const form = useRef();
 
     const sendEmail = () => {
@@ -13,7 +13,7 @@ export default function Footer() {
         console.log(result.text);
         setEmailValue("");
         toast.success('Sent Sucessfully', {
-        position: "top-center",
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: true,
         closeOnClick: false,
@@ -57,8 +57,7 @@ export default function Footer() {
         </footer>
 <br /><br /><br /><br />
     <ToastContainer
-    toastStyle={{ width: '200px' }}
-    position="top-center"
+    position="top-right"
     autoClose={3000}
     hideProgressBar={true}
     newestOnTop={false}

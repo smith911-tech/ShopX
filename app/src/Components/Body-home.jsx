@@ -5,7 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import data from '../Components/Data file/Data'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 console.log(data)
 export default function BodyHome() {
     const Navigate = useNavigate()
@@ -20,6 +21,16 @@ export default function BodyHome() {
         const updatedCartItems = [...cartItems, item];
         setCartItems(updatedCartItems);
         localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+            toast.success('Added to Cart', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
     }
     };
     return(
@@ -206,6 +217,20 @@ export default function BodyHome() {
 <br /><br />
 </div>
 {/* !!!!!!!!!!  end of third swiper */}
+        <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        />
+        {/* Same as */}
+        <ToastContainer />
         </article>
     )
 }
