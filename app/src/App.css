@@ -670,11 +670,26 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 @media screen and (min-width: 600px) {
     /* ! Cart Page */
     .flex-cart-page {
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
     }
     .proceed-btn { 
         font-size: 20px;
     }
+        .flex-cart-page img {
+            height: 140px;
+            width: 180px;
+            object-fit: contain;
+        }
+        .namecart-page {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 60vmin;
+        }
+        .remove-price {
+            margin-top: -15px;
+            margin-left: 50%;
+        }
      /* ? End of Cart page */
 }

@@ -57,9 +57,9 @@ export default function Cart(){
                         <div>
                         <p>Quantity:</p>
                         <div className="count-cart">
-                            <div onClick={() => handleIncrement(item.id)} className="quantity-add"><h3 className="AddText"></h3></div>
-                            <div className="count"><h3>{quantities[item.id] || 1}</h3></div>
                             <div onClick={() => handleDecrement(item.id)} className="quantity-sub"><h3 className="SubText"></h3></div>
+                            <div className="count"><h3>{quantities[item.id] || 1}</h3></div>
+                            <div onClick={() => handleIncrement(item.id)} className="quantity-add"><h3 className="AddText"></h3></div>
                         </div>
                         </div>
                         <div className="remove-price">
