@@ -51,7 +51,7 @@ export default function Cart(){
                 cartItems.map((item) => (
                     <div className="flex-cart-page" key={item.id}>
                     <img onClick={() => HandleNavigate(item.id)} src={item.img} alt="" className="img-cartside"/>
-                    <div className="count-name-flex">
+                    <div  className="count-name-flex">
                         <p onClick={() => HandleNavigate(item.id)} className="namecart-page">{item.name}</p>
                         <div className="flex-remove-count">
                         <div>
