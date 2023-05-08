@@ -1,6 +1,15 @@
-
+import { useNavigate } from "react-router-dom"
 
 export default function SignIn() {
+        const navigate = useNavigate()
+    function navigateSignup(){
+        navigate('/SignUp')
+            window.scrollTo(0,0)
+    } 
+    function navigateForgetpass(){
+        navigate('/Forgetpass')
+       window.scrollTo(0,0)
+    }
     return (
         <main className="full-signdiv">
             <h2 className="logoname">Shop X <i className="fa-solid fa-cart-shopping fa-bounce"></i></h2>
@@ -14,8 +23,8 @@ export default function SignIn() {
             <div className="in-text"><label htmlFor="Password">Password</label>
             <input type="password" name="password" id="Password"  /></div>
             <button className="signBtn">Login</button>
-            <p className="forgotpass">Forgot Password ?</p>
-            <p className="newusertell">New User ? <span className="signupLogin">Sign Up</span></p>
+            <p className="forgotpass" onClick={navigateForgetpass}>Forgot Password ?</p>
+            <p className="newusertell">New User ? <span className="signupLogin" onClick={navigateSignup}>Sign Up</span></p>
         </form>
         </div>
         </main>

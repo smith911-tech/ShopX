@@ -622,13 +622,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
     /* ! sigin page */
     .full-signdiv{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-color:#f36b2b;
     }
     .under-signdiv{
         position: absolute;
-        top: 50%;
+        top: 370px;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
@@ -688,7 +688,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         color: white;
         font-family: sans-serif;
         font-weight: 900;
-        top: 5%;
+        top: 50px;
         transform: translate(-50%, -50%);
     }
     .forgotpass{
