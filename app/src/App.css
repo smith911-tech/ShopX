@@ -620,12 +620,29 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     /* ? end details data page*/
 }
+    /* ! sigin page */
+    .full-signdiv{
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(2px);
+    }
+    .under-signdiv{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    /* ? end of sigin */
 @media screen and (max-width: 555px) {
     /* ! footer */
     .under-subscribe-footer {
         display: flex;
         flex-direction: column;
         gap: 2px;
+        
     }
 }
 @media screen and (min-width: 590px) {
