@@ -2,8 +2,16 @@
 
 export default function SignIn() {
     return (
-        <>
-            <h1>Sign In</h1>
-        </>
+        <main>
+        <div>
+            <h2>Login</h2>
+        <form action="" className="">
+            <label htmlFor="Email">Email</label>
+            <input type="email" name="email" id="Email"  />
+            <label htmlFor="Password">Password</label>
+            <input type="password" name="password" id="Password"  />
+        </form>
+        </div>
+        </main>
     )
 }
