@@ -623,8 +623,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* ! sigin page */
     .full-signdiv{
     height: 100vh;
-    width: 100vw;
-    backdrop-filter: blur(2px);
+    width: 100%;
+    background-color:#f36b2b;
     }
     .under-signdiv{
         position: absolute;
@@ -632,8 +632,80 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
-        padding: 20px;
         border-radius: 10px;
+        width: 70%;
+    }
+    .siginText{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .form0{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .form0 input{
+        padding: 10px 15px;
+        outline: none;
+        border: 1px solid black;
+    }
+    .form0 label{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .form0 input:focus{
+        border: 1px solid #f26522;
+    }
+    .in-text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .signBtn{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        background-color: #f26522;
+        color: white;
+        border: none;
+        padding: 10px 5px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 800;
+    }
+        .signBtn:hover{
+            background-color:#30302e;
+            transition: ease-in-out 300ms;
+        }
+    .logoname{
+        position: absolute;
+        left: 50%;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 900;
+        top: 5%;
+        transform: translate(-50%, -50%);
+    }
+    .forgotpass{
+        text-align: right;
+        color: #f26522;
+        cursor: pointer;
+        font-weight: 900;
+    }
+    .newusertell{
+        text-align: center;
+        font-weight: 900;
+        color: grey;
+    }
+    .signupLogin{
+        font-weight: 900;
+        color: #f26522;
+        cursor: pointer;
     }
     /* ? end of sigin */
 @media screen and (max-width: 555px) {
@@ -642,7 +714,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: flex;
         flex-direction: column;
         gap: 2px;
-        
     }
 }
 @media screen and (min-width: 590px) {
@@ -683,6 +754,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         left: -10px;
     }
     /* ? End of Cart page */
+    /* ! sigin */
+        .under-signdiv{
+            width: 50%;
+        }
+    /* ? end of sigin */
 }
 @media screen and (min-width: 600px) {
     /* ! Cart Page */
