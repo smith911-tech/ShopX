@@ -33,7 +33,8 @@ export default function SignUpA() {
 
             <div className={`in-text ${
             carryFullname ? "out-text" : "in-text"
-            }`}><label htmlFor="name">Full name</label>
+            }`}>
+            <label htmlFor="name">Full name</label>
             <input
             type="text" 
             name="" 
@@ -41,14 +42,36 @@ export default function SignUpA() {
             onClick={carryFullNameF}
             /></div>
 
-            <div className="in-text"><label htmlFor="Password">Email</label>
-            <input type="email" name="email" id="Password"  /></div>
+            <div className={`in-text 
+            ${carryEmail ? "out-text" : "in-text"}`}>
+            <label htmlFor="">Email</label>
+            <input 
+            type="email"
+             name=""
+            id="" 
+            onClick={carryEmailF}
+            />
+            </div>
             
-            <div className="in-text"><label htmlFor="Password">Password</label>
-            <input type="password" name="password" id="Password"  /></div>
+            <div className={`in-text 
+            ${carrypassword ? "out-text" : "in-text"}`}>
+            <label htmlFor="Password">Password</label>
+            <input
+            type="password" 
+            name="password" 
+            id="Password"  
+            onClick={carryPassF}
+            /></div>
 
-            <div className="in-text"><label htmlFor="Password"> Confirm Password</label>
-            <input type="password" name="password" id="Password"  /></div>
+            <div className={`in-text 
+            ${carrypasswordC ? "out-text" : "in-text"}`}>
+            <label htmlFor="">Confirm Password</label>
+            <input 
+            type="password" 
+            name="password" 
+            id=""  
+            onclick={carryPassCF}
+            /></div>
 
             <button className="signBtn" >Sign Up</button>
 
