@@ -13,18 +13,23 @@ export default function SignUpA() {
         <div className="under-signdiv">
             <h2 className="siginText">Create an Account</h2>
         <form action="" className="form0">
-            <div className="in-text">
-            <div className="in-text"><label htmlFor="Password">Full Name</label>
-            <input type="name" name="password" id="Password"  /></div>
-            <label htmlFor="Email">Email</label>
-            <input type="email" name="email" id="Email"  />
-            </div>
+
+            <div className="in-text"><label htmlFor="name">Full name</label>
+            <input type="text" name="" id="name"  /></div>
+
+            <div className="in-text"><label htmlFor="Password">Email</label>
+            <input type="email" name="email" id="Password"  /></div>
+            
             <div className="in-text"><label htmlFor="Password">Password</label>
             <input type="password" name="password" id="Password"  /></div>
+
             <div className="in-text"><label htmlFor="Password"> Confirm Password</label>
             <input type="password" name="password" id="Password"  /></div>
+
             <button className="signBtn" >Sign Up</button>
+
             <p className="newusertell">Have an Account ? <span className="signupLogin" onClick={navigateSignIn}>Sign In</span></p>
+            
         </form>
         </div>
         </main>

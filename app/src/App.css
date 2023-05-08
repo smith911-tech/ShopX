@@ -651,12 +651,22 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         outline: none;
         border: 1px solid black;
     }
-    .form0 label{
+    .in-text label{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .form0 input:focus{
         border: 1px solid #f26522;
     }
+    .in-text{
+        position: relative;
+        padding-top: 30px;
+    }
+    .in-text label{
+        position: absolute;
+        bottom: 8px ;
+        left:10px;
+    }
+
     .in-text{
         display: flex;
         flex-direction: column;
@@ -715,6 +725,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         flex-direction: column;
         gap: 2px;
     }
+    /* ? end of footer */
+        /* ! sigin */
+        .under-signdiv {
+            width: 95%;
+        }
+    
+        /* ? end of sigin */
 }
 @media screen and (min-width: 590px) {
     /* ? end of footer */
