@@ -692,7 +692,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             background-color:#30302e;
             transition: ease-in-out 300ms;
         }
-    .logoname{
+    .loginame{
         position: absolute;
         left: 50%;
         color: white;
@@ -700,6 +700,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         font-weight: 900;
         top: 50px;
         transform: translate(-50%, -50%);
+    }
+    .signuploginname{
+        padding-bottom: 20px;
     }
     .forgotpass{
         text-align: right;
@@ -723,6 +726,24 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         left:0;
         transition: ease-in-out 500ms;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .afterEmail::after{
+        content: "Email";
+    }
+    .afterPassword::after{
+        content: "Password";
+    }
+    .afterConfirmPassword::after{
+        content: "Confirm Password";
+    }
+    .afterFullName::after{
+        content: "Full Name";
+    }
+    .showpassword::after{
+        content: "Show Password";
+    }
+    .password-check{
+        text-align: right;
     }
     /* ? end of sigin */
 @media screen and (max-width: 555px) {
