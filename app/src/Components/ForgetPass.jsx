@@ -14,9 +14,9 @@ export default function ForgetPassword() {
     return (
         <main className="full-signdiv"> 
 
-            <h2 className="loginame">Shop X <i className="fa-solid fa-cart-shopping fa-bounce"></i></h2>
+            <h2 className="loginame ">Shop X <i className="fa-solid fa-cart-shopping fa-bounce"></i></h2>
 
-        <div className="under-signdiv">
+        <div className="under-signdiv forgetpassunder-signdiv">
             <h2 className="siginText">Forgot Password </h2>
 
         <form action="" className="form0">
