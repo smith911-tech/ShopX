@@ -2,13 +2,11 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { createUserWithEmailAndPassword } from "firebase/auth"
 import {auth} from "../firebase"
-export default function SignUpA() {
-    const [formData, setFormData] = useState({
-    fullname: "", 
-    email: "", 
-    password: "", 
-    passwordC: "" 
-})  
+export default function SignUpA() { 
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [Confirmpassword, setConfirmPassword] = useState("")
+    const [Fullname, setFullname] = useState("")
     const [error, seterror] = useState("")
     const [carrier, setcarrier] = useState(false)
     const [showpassword, setshowpassword] = useState(false)
@@ -20,17 +18,20 @@ export default function SignUpA() {
     function carrierF(){
     setcarrier(true)
     }
-        function showpassF() {
+    function showpassF(){
         setshowpassword(!showpassword)
     }
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.email === '' || formData.password === '' || formData.confirmPassword === ''  || formData.fullname === '') {
+    if (email === "" || password === "" || Confirmpassword === ""  || Fullname === "") {
       seterror('Please fill in all fields');
-    } else if (formData.password !== formData.confirmPassword) {
+    } else if (password !== Confirmpassword) {
       seterror('Passwords do not match');
-    } else {
-      createUserWithEmailAndPassword(auth, formData.email, formData.password)
+    } else if (password.length < 8) {
+      seterror('Password must be at least 6 characters');
+    }
+    else {
+      createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           const user = userCredential.user;
           console.log(user);
@@ -58,10 +59,10 @@ export default function SignUpA() {
             <input
             type="text" 
             name="" 
-            value={formData.fullname}
             id="name"  
             onClick={carrierF}
-            
+            value={Fullname}
+            onChange={(e) => setFullname(e.target.value)}
             required
             /></div>
 
@@ -72,9 +73,9 @@ export default function SignUpA() {
             type="email"
              name=""
             id="" 
-            value={formData.email}
+            value={email}
             onClick={carrierF}
-            
+            onChange={(e) => setEmail(e.target.value)}
             required
             />
             </div>
@@ -86,9 +87,9 @@ export default function SignUpA() {
             type={showpassword ? "text" : "password"}
             name="password" 
             id="Password"  
-            value={formData.password}
+            value={password}
             onClick={carrierF}
-            
+            onChange={(e) => setPassword(e.target.value)}
             required
             /></div>
 
@@ -98,10 +99,10 @@ export default function SignUpA() {
             <input 
             type={showpassword ? "text" : "password"} 
             name="password" 
-            value={formData.passwordC}
             onClick={carrierF}
-            
+            value={Confirmpassword}
             id=""  
+            onChange={(e) => setConfirmPassword(e.target.value)}
             required
             /></div>
             

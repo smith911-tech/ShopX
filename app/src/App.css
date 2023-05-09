@@ -628,7 +628,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .under-signdiv{
         position: absolute;
-        top: 370px;
+        top: 420px;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
@@ -637,6 +637,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .forgetpassunder-signdiv{
         top: 280px;
+    }
+    .siginpageunderdiv{
+        top: 370px;
     }
     .siginText{
         text-align: center;
@@ -752,8 +755,11 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .errorsignup{
         color: red;
-        
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.249);
+        padding: 10px 0;
     }
+
     /* ? end of sigin */
 @media screen and (max-width: 555px) {
     /* ! footer */
