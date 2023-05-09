@@ -47,7 +47,7 @@ export default function SignUpA() {
     return (
         <main className="full-signdiv">
         
-            <h2 className="loginame signuploginname">Shop X <i className="fa-solid fa-cart-shopping fa-bounce"></i></h2>
+            <h2 className="loginame signuploginname">Shop X <i className="fa-solid fa-cart-shopping fa-bounce"></i></h2> 
         <div className="under-signdiv">
             <h2 className="siginText">Create an Account</h2>
         <form action="" className="form0">
