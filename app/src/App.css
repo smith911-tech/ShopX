@@ -653,6 +653,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 10px 15px;
         outline: none;
         border: 1px solid black;
+        font-size: 15px;
+        font-family: sans-serif;
     }
     .form0 input:focus{
         border: 1px solid #f26522;

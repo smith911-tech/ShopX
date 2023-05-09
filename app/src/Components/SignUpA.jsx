@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
-
 export default function SignUpA() {
     const [carryFullname, setcarryFullname] = useState(false)
     const [carryEmail, setcarryEmail] = useState(false)
