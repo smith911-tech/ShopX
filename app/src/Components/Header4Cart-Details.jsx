@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 export default function HeaderCartDetails() {''
     const Navigate = useNavigate()
         function BacktoHomepage() {
-        Navigate('/')
+        Navigate('/Mainapp')
         window.scrollTo(0, 0);
     }
     function CartPage() {

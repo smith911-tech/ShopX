@@ -7,7 +7,7 @@ export default function SearchPage(){
     const [SearchData, setSearchData] = useState([])
     const Navigate = useNavigate()
     function BacktoHomepage() {
-        Navigate('/')
+        Navigate('/Mainapp')
         window.scrollTo(0, 0);
     }
     function CartPage() {
@@ -27,6 +27,11 @@ export default function SearchPage(){
         const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
         setCount(cartItems.length);
     }, []);
+
+    function getSuggestions() {
+    const regex = new RegExp(`${InputValue}`, "i");
+    return  data.filter((item) => regex.test(item.category)).slice(0, 5);
+  }
     return(
         
         <>
@@ -49,6 +54,22 @@ export default function SearchPage(){
                 onChange={(e) => setInputValue(e.target.value)}
                 />
                 <i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
+                        {InputValue && (
+            <ul className="absolute bg-white w-full  shadow-xl">
+                {getSuggestions().length === 0 ? (
+                <li>No results found</li>
+                ) : (
+                getSuggestions().map((data) => (
+                    <li
+                    className="capitalize ml-4 mt-3 mb-3 cursor-pointer w-full"
+                    key={data.key}
+                    >
+                    {data.category}
+                    </li>
+                ))
+                )}
+            </ul>
+            )}
             </article>
             <div className='cart-account-home colori change-cartcolor-plusaccount-color'>
                 <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i>{count > 0 &&<span className="number-icon-cart">{count}</span>}</span></h3>

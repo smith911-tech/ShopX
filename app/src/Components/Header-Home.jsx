@@ -56,8 +56,8 @@ export default function Header() {
             </article>
             <div className='cart-account-home'>
                 
-                <h3 onClick={CartPage}><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i> {count > 0 &&<span className="number-icon-cart">{count}</span>} </span>   Cart</h3>
-                <h3><i class="fa-solid fa-user"></i>  Account</h3>
+                <h3 onClick={CartPage}><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i> {count > 0 &&<span className="number-icon-cart">{count}</span>} </span> </h3>
+                <h3 className="account-text"><i class="fa-solid fa-user"></i>  Account</h3>
             </div>
             </div>
     <Swiper

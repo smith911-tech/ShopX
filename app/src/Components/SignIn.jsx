@@ -6,6 +6,7 @@ export default function SignIn() {
     // ! states
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
+    const [error, seterror] = useState('')
     const [carrier, setcarrier] = useState(false)
     const [showpassword, setshowpassword] = useState(false)
     // ? end of states
@@ -27,7 +28,7 @@ export default function SignIn() {
     function handleSubmit(e) {
         e.preventDefault();
         if (email === "" || password === "") {
-            alert('Please fill in all fields');
+            seterror('Please fill in all fields');
         } else {
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
@@ -39,6 +40,7 @@ export default function SignIn() {
                     const errorCode = error.code;
                     const errorMessage = error.message;
                     console.log(errorCode, errorMessage);
+                    seterror(errorMessage);
                 });
         }
     }
@@ -79,6 +81,8 @@ export default function SignIn() {
             <label htmlFor="showpass" className="showpassword"></label>
             <input type="checkbox" name="" id="showpass" onClick={showpassF}/>
             </div>
+            
+            {error && <p className="errorsignup">{error}</p>}
 
             <button className="signBtn" onClick={handleSubmit}>Login</button>
 
