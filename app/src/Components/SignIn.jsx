@@ -79,7 +79,7 @@ export default function SignIn() {
             carrier ? "out-text" : "in-text"
             }`}><label htmlFor="Password" className="afterPassword"></label>
             <input 
-            type={showpassword ? "password" : "text"} 
+            type={showpassword ? "text" : "password"} 
             name="password" 
             id="Password"  
             onClick={carrierF}

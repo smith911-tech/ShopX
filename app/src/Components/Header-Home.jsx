@@ -4,6 +4,8 @@ import "swiper/css/navigation";
 import React, { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
+import {auth} from '../firebase'
+import { signOut } from "firebase/auth";
 
 export default function Header() {
     const Navigate = useNavigate()
@@ -20,6 +22,14 @@ export default function Header() {
         const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
         setCount(cartItems.length);
     }, []);
+    function signout() {
+        signOut(auth).then(() => {
+            Navigate('/')
+        })
+        .catch((error) => {
+            console.log(error.message)
+        })
+    }
     return(
         <header className="Home-header">
             <div className="Div-underhome">
@@ -57,7 +67,7 @@ export default function Header() {
             <div className='cart-account-home'>
                 
                 <h3 onClick={CartPage}><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i> {count > 0 &&<span className="number-icon-cart">{count}</span>} </span> </h3>
-                <h3 className="account-text"><i class="fa-solid fa-user"></i>  Account</h3>
+                <h3 onClick={signout} className="account-text"><i class="fa-solid fa-user"></i>  Account</h3>
             </div>
             </div>
     <Swiper
