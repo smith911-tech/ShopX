@@ -13,9 +13,10 @@ export default function SearchPage(){
     function CartPage() {
         Navigate("/Cart")
     }
-    const handleSearch = () => {
+    const handleSearch = (e) => {
     const filtered = data.filter(item => item.category === InputValue.toLowerCase());
     setSearchData(filtered);
+    e.preventDefault()
     }
     function HandleNavigate(id) {
     Navigate(`/Details/${id}`);
@@ -31,7 +32,7 @@ export default function SearchPage(){
     function getSuggestions() {
     const regex = new RegExp(`${InputValue}`, "i");
     return  data.filter((item) => regex.test(item.category)).slice(0, 5);
-  }
+    }
     return(
         
         <>
@@ -43,34 +44,36 @@ export default function SearchPage(){
             </div>
 
             <div className="flex-header">
-            <article className="search-button searchPageinput">
+            <form className="search-button searchPageinput" onSubmit={handleSearch}>
                 <input 
                 type="search" 
                 name="" 
                 id=""
                 placeholder="Search Products"
                 value={InputValue}
-                onClick={handleSearch}
                 onChange={(e) => setInputValue(e.target.value)}
                 />
                 <i onClick={handleSearch} className="fa-solid fa-magnifying-glass"></i>
-                        {InputValue && (
-            <ul className="absolute bg-white w-full  shadow-xl">
-                {getSuggestions().length === 0 ? (
-                <li>No results found</li>
-                ) : (
-                getSuggestions().map((data) => (
-                    <li
-                    className="capitalize ml-4 mt-3 mb-3 cursor-pointer w-full"
-                    key={data.key}
-                    >
-                    {data.category}
-                    </li>
-                ))
-                )}
-            </ul>
+        {InputValue && (
+        <ul className="ul-search">
+            {getSuggestions().length === 0 ? (
+            <li>No results found</li>
+            ) : (
+            Array.from(new Set(getSuggestions().map((data) => data.category))).map(
+                (category) => (
+                <li
+                    className=""
+                    key={category}
+                >
+                    {category}
+                </li>
+                )
+            )
             )}
-            </article>
+        </ul>
+        )}
+
+            </form>
             <div className='cart-account-home colori change-cartcolor-plusaccount-color'>
                 <h3><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i>{count > 0 &&<span className="number-icon-cart">{count}</span>}</span></h3>
                 <h3><i class="fa-solid fa-user"></i></h3>

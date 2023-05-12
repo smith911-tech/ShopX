@@ -28,7 +28,8 @@
       "default",
       {
         "ignore": [
-          "backdrop-filter"
+          "backdrop-filter",
+          "translate"
         ]
       }
     ],

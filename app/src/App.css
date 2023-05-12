@@ -370,7 +370,26 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
     font-weight: 900;
 }
-
+.searchPageinput{
+    position: relative;
+}
+.ul-search{
+    top: 30px;
+    position: absolute;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    list-style: none;
+    z-index: 100;
+}
+.ul-search li{
+    padding: 5px 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin: 5px 0;
+    border-bottom: 1px soldi black;
+}
 /* ? end of search page !*/
 
 /* ! details data page*/
@@ -624,7 +643,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     .full-signdiv{
     height: 120vh;
     width: 100%;
-    background-color:#f36b2b;
+    background: linear-gradient(to bottom, #e1ad2d,#e1ad2d, white);
     }
     .under-signdiv{
         position: absolute;
@@ -683,7 +702,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         width: 50%;
         display: block;
         margin: 0 auto;
-        background-color: #f26522;
+        background-color: #e1ad2d;
         color: white;
         border: none;
         padding: 10px 5px;
@@ -695,6 +714,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         font-family: sans-serif;
         font-weight: 800;
         margin-top: 10px;
+        
     }
         .signBtn:hover{
             background-color:#30302e;

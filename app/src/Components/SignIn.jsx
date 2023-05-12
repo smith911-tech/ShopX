@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {auth} from '../firebase'
-import { signInWithEmailAndPassword } from "firebase/auth"
+import { signInWithEmailAndPassword,  onAuthStateChanged } from "firebase/auth"
+
 export default function SignIn() {
     // ! states
     const [email, setemail] = useState('')
@@ -44,6 +45,15 @@ export default function SignIn() {
                 });
         }
     }
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                navigate('/Mainapp');
+            } else {
+                console.log("user is signed out");
+            }
+        });
+    }, [])
     return (
         <main className="full-signdiv">
             <h2 className="loginame">Shop X <i className="fa-solid fa-cart-shopping fa-bounce"></i></h2>
