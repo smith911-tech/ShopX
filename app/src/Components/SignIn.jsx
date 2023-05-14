@@ -2,11 +2,13 @@ import { useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import {auth} from '../firebase'
 import { signInWithEmailAndPassword,  onAuthStateChanged } from "firebase/auth"
+import {InfinitySpin} from 'react-loader-spinner'
 
 export default function SignIn() {
     // ! states
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
+    const [Loading, setLoading] = useState(false)
     const [error, seterror] = useState('')
     const [carrier, setcarrier] = useState(false)
     const [showpassword, setshowpassword] = useState(false)
@@ -28,8 +30,10 @@ export default function SignIn() {
     }
     function handleSubmit(e) {
         e.preventDefault();
+        setLoading(true)
         if (email === "" || password === "") {
             seterror('Please fill in all fields');
+            setLoading(false)
         } else {
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
@@ -42,6 +46,7 @@ export default function SignIn() {
                     const errorMessage = error.message;
                     console.log(errorCode, errorMessage);
                     seterror(errorMessage);
+                    setLoading(false)
                 });
         }
     }
@@ -94,8 +99,13 @@ export default function SignIn() {
             
             {error && <p className="errorsignup">{error}</p>}
 
-            <button className="signBtn" onClick={handleSubmit}>Login</button>
-
+            <button className={`${Loading ? "Loadingbtn" : "signBtn"} `} onClick={handleSubmit} disabled={Loading}>
+                {Loading ? 
+                (<InfinitySpin 
+                color="#FFFFFF"
+                />)
+            :  ("Log In")}
+            </button>
             <p className="forgotpass" onClick={navigateForgetpass}>Forgot Password ?</p>
 
             <p className="newusertell">New User ? <span className="signupLogin" onClick={navigateSignup}>Sign Up</span></p>

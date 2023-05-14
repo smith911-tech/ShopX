@@ -779,6 +779,30 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: rgba(0, 0, 0, 0.249);
         padding: 10px 0;
     }
+    .Loadingbtn{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        background-color: #e1ad2d;
+        color: white;
+        border: none;
+        padding: 0px 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 800;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .Loadingbtn svg{
+        width: 80px;
+        height: 40px;
+        margin: 0 auto;
+        display: block;
+    }
 
     /* ? end of sigin */
 @media screen and (max-width: 555px) {
