@@ -25,6 +25,7 @@ export default function SignUpA() {
     }
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true)
     if (email === "" || password === "" || Confirmpassword === ""  || Fullname === "") {
       setLoading(false)
       seterror('Please fill in all fields');
