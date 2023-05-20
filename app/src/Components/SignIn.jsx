@@ -110,6 +110,7 @@ export default function SignIn() {
 
             <p className="newusertell">New User ? <span className="signupLogin" onClick={navigateSignup}>Sign Up</span></p>
         </form>
+        <button className="bypassbtn">Bypass Login System</button>
         </div>
         </main>
     )

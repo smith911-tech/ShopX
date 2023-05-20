@@ -803,7 +803,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: 0 auto;
         display: block;
     }
-
+    .bypassbtn{
+        width: 100%;
+        background-color: #e1ad2d;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 0px;
+    }
     /* ? end of sigin */
 @media screen and (max-width: 555px) {
     /* ! footer */
