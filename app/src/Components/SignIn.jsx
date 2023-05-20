@@ -59,6 +59,10 @@ export default function SignIn() {
             }
         });
     }, [])
+    //! bypass login system
+    function bypasslogin() {
+        navigate('/Mainapp')
+    }
     return (
         <main className="full-signdiv">
             <h2 className="loginame">Shop X <i className="fa-solid fa-cart-shopping fa-bounce"></i></h2>
@@ -110,7 +114,7 @@ export default function SignIn() {
 
             <p className="newusertell">New User ? <span className="signupLogin" onClick={navigateSignup}>Sign Up</span></p>
         </form>
-        <button className="bypassbtn">Bypass Login System</button>
+        <button onClick={bypasslogin} className="bypassbtn">Bypass Login System</button>
         </div>
         </main>
     )
