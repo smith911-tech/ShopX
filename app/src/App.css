@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 i{
     cursor: pointer;
@@ -31,7 +32,7 @@ i{
 }
 
 .Home-header {
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.947), #e1ad2d, #e1ad2d);
+    background: linear-gradient(to top, #ebf2f7, #00b53f, #00b53f);
     padding: 0 20px;
 }
 
@@ -256,7 +257,7 @@ font-weight: 900;
     padding-bottom: 40px;
 }
 .footer-home {
-    background-color: #252525;
+    background-color: #00b53f;
     padding: 30px 5% 10px 5%;
 }
 .input-email-div{
@@ -265,7 +266,7 @@ font-weight: 900;
     align-items: center;
 }
 .input-email-div input {
-    background-color: #252525;
+    background-color: #00b53f;
     outline: none;
     border-top: none;
     border-left: none;
@@ -276,10 +277,14 @@ font-weight: 900;
     border-bottom: white 2px solid;
 }
 .input-email-div button{
-    background-color: #252525;
-    color: #f26522;
+    background-color: white;
     border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 6px;
     cursor: pointer;
+    color: black;
 }
 .under-subscribe-footer{
     color: white;

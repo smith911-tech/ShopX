@@ -2,7 +2,6 @@ import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import React, { useRef, useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
 import {auth} from '../firebase'
 import { signOut } from "firebase/auth";
@@ -70,30 +69,6 @@ export default function Header() {
                 <h3 onClick={signout} className="account-text"><i class="fa-solid fa-user"></i>  Account</h3>
             </div>
             </div>
-    <Swiper
-        autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-        }}
-        style={{
-        "--swiper-navigation-size": "25px",
-        }}
-        navigation={true} 
-        modules={[Navigation, Autoplay]} 
-        className="mySwiperhome">
-        <SwiperSlide>The best Online Store in Africa
-        <button>Order Now</button>
-        </SwiperSlide>
-        <SwiperSlide>Enjoy a seamless shopping experience
-        <button>Order Now</button>
-        </SwiperSlide>
-        <SwiperSlide>Discover a wide selection of products from trusted brands
-        <button>Order Now</button>
-        </SwiperSlide>
-        <SwiperSlide>Start browsing now and indulge in the ultimate shopping experience!
-        <button>Order Now</button>
-        </SwiperSlide>
-    </Swiper>
         </div>
         </header>
         

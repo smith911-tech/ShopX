@@ -55,7 +55,7 @@ export default function SignIn() {
             if (user) {
                 navigate('/Mainapp');
             } else {
-                console.log("user is signed out");
+                navigate('/')
             }
         });
     }, [])
