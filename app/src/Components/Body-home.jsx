@@ -6,10 +6,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import data from '../Components/Data file/Data'
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css'; 
 console.log(data)
 export default function BodyHome() {
-    const Navigate = useNavigate()
+    const Navigate = useNavigate() 
     function HandleNavigate(id) {
     Navigate(`/Details/${id}`);
     window.scrollTo(0, 0);
