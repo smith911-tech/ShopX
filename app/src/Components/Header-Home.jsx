@@ -1,16 +1,12 @@
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import React, { useRef, useState, useEffect } from 'react';
+import React, {  useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import backGrounImg from '../Image/headerimage.png'
 
-export default function Header() {
+export default function Header(searchInput) {
     const Navigate = useNavigate()
-    function SearchPageHandleClick() {
-        Navigate('/SearchPage')
-        window.scrollTo(0, 0);
-    }
     function CartPage() {
         Navigate("/Cart")
     }
@@ -22,7 +18,7 @@ export default function Header() {
     }, []);
     return (
         <header className="Home-header">
-            <div className="Div-underhome">
+            <div className={`${searchInput ? "Div-underhome" : "hidden"} `}>
                 <h3>
                     Best Quality Wears
                 </h3>
@@ -36,7 +32,7 @@ export default function Header() {
                     Custommer Care
                 </h3>
             </div>
-            <h1 className="logo-text">ShopX</h1>
+            <h1 className={`${searchInput ? "display logo-text" : "hidden"}`}>ShopX</h1>
             <div className='cart-account-home display-none-cart'>
                 <h3><span className="position-icon">
                     <i onClick={CartPage} className="fa-solid fa-cart-shopping"></i>{count > 0 && <span className="number-icon-cart">{count}</span>}</span></h3>
@@ -49,7 +45,6 @@ export default function Header() {
                             type="search"
                             name=""
                             id=""
-                            onClick={SearchPageHandleClick}
                             placeholder="Search Products"
                         />
                         <i className="fa-solid fa-magnifying-glass"></i>

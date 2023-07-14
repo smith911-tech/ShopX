@@ -3,7 +3,7 @@ import emailjs, { send } from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-export default function Footer() {
+export default function Footer(searchInput) {
     const [emailValue, setEmailValue] = useState("");
     const form = useRef();
 
@@ -31,9 +31,8 @@ export default function Footer() {
         sendEmail();
     };
     return (
-        <>
+        <div className={`${searchInput ? "display" : "hidden"}`}>
             <img src={cartdancing} alt="" className='cartdancing' />
-
             <footer className='footer-home'>
                 <h1 className='logo-text'>Shop X</h1>
                 <div className='input-email-div'>
@@ -68,6 +67,6 @@ export default function Footer() {
                 pauseOnHover
                 theme="dark"
             />
-        </>
+        </div>
     )
 }
