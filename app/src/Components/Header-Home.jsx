@@ -3,8 +3,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { auth } from '../firebase'
-import { signOut } from "firebase/auth";
 import backGrounImg from '../Image/headerimage.png'
 
 export default function Header() {
@@ -22,14 +20,6 @@ export default function Header() {
         const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
         setCount(cartItems.length);
     }, []);
-    function signout() {
-        signOut(auth).then(() => {
-            Navigate('/')
-        })
-            .catch((error) => {
-                console.log(error.message)
-            })
-    }
     return (
         <header className="Home-header">
             <div className="Div-underhome">
@@ -50,7 +40,7 @@ export default function Header() {
             <div className='cart-account-home display-none-cart'>
                 <h3><span className="position-icon">
                     <i onClick={CartPage} className="fa-solid fa-cart-shopping"></i>{count > 0 && <span className="number-icon-cart">{count}</span>}</span></h3>
-                <h3><i class="fa-solid fa-user"></i></h3>
+                <h3><i  class="fa-solid fa-user"></i></h3>
             </div>
             <div className="Img-cart-search">
                 <div className="flex-header">
@@ -67,7 +57,7 @@ export default function Header() {
                     <div className='cart-account-home'>
 
                         <h3 onClick={CartPage}><span className="position-icon"><i className="fa-solid fa-cart-shopping"></i> {count > 0 && <span className="number-icon-cart">{count}</span>} </span> </h3>
-                        <h3 onClick={signout} className="account-text"><i class="fa-solid fa-user"></i>  Account</h3>
+                        <h3  className="account-text"><i class="fa-solid fa-user"></i> Account</h3>
                     </div>
                 </div>
                         <div className="bg-header">

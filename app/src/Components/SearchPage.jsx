@@ -34,7 +34,6 @@ export default function SearchPage(){
     return  data.filter((item) => regex.test(item.category)).slice(0, 5);
     }
     return(
-        
         <>
         <div className="search-page-flows">
             <h2> <i onClick={BacktoHomepage} class="fa-solid fa-arrow-left fa-beat"></i></h2>

@@ -24,10 +24,12 @@ i{
     margin: 0 auto;
     margin-top: -45px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
 }
 
 .Div-underhome h3:hover {
     color: crimson;
+    cursor: none;
     transition: 300ms ease-in-out;
 }
 
@@ -62,7 +64,7 @@ i{
     height: 40px;
     border: none;
     outline: none;
-    width: 60vw;
+    width: 45vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     border-top-left-radius: 5px;
@@ -93,6 +95,7 @@ i{
     color: white;
     word-spacing: 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .cart-account-home {
     display: flex;
@@ -172,7 +175,6 @@ i{
 /* ! body article */
 
 .bodyhomearticle{
-    margin-top: -40px;
     padding: 0 20px;
 }
 .swiper1div{
@@ -258,6 +260,7 @@ font-weight: 900;
     display: block;
     margin: 0 auto;
     padding-bottom: 40px;
+    user-select: none;
 }
 .footer-home {
     background-color: #00b53f;
@@ -298,6 +301,7 @@ font-weight: 900;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    user-select: none;
 }
 .under-subscribe-footer p:hover {
     color: #f26522;
@@ -308,12 +312,14 @@ font-weight: 900;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 30px 0;
+    user-select: none;
 }
 .copy-name{
     text-align: center;
     font-weight: 900;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+        user-select: none;
 }
 /* ? end of footer */
 
@@ -545,7 +551,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         gap: 1px;
     }
     .quantity-sub h3, .quantity-add h3, .count h3{
-        background-color: #e1ad2d;
+        background-color: #00b53f;
         padding: 10px;
         color: white;
     }
@@ -571,19 +577,19 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         cursor: pointer;
     }
     .price-cart{
-        color: #f26522;
+        color: #00b53f;
     }
     .header-cart{
-        background-color: #e1ad2d;
+        background-color: #00b53f;
     }
     .Cart-carticon{
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #f26522;
+        color: #00b53f;
     }
     .proceed-btn{
         color: white;
-        background-color: #f26522;
+        background-color: #00b53f;
         border: none;
         padding: 10px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -647,179 +653,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     /* ? end details data page*/
 }
-    /* ! sigin page */
-    .full-signdiv{
-    height: 120vh;
-    width: 100%;
-    background: linear-gradient(to bottom, #e1ad2d,#e1ad2d, white);
-    }
-    .under-signdiv{
-        position: absolute;
-        top: 420px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        border-radius: 10px;
-        width: 70%;
-    }
-    .forgetpassunder-signdiv{
-        top: 280px;
-    }
-    .siginpageunderdiv{
-        top: 390px;
-    }
-    .siginText{
-        text-align: center;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .form0{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-    }
-    .form0 input{
-        padding: 10px 15px;
-        outline: none;
-        border: 1px solid black;
-        font-size: 15px;
-        font-family: sans-serif;
-    }
-    .form0 input:focus{
-        border: 1px solid #f26522;
-    }
-    .in-text{
-        position: relative;
-        padding-top: 30px;
-    }
-    .in-text label{
-        position: absolute;
-        top: 37px;
-        left:10px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .in-text{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-            transition: ease-in-out 500ms;
-    }
-    .signBtn{
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-        background-color: #e1ad2d;
-        color: white;
-        border: none;
-        padding: 10px 5px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        cursor: pointer;
-        font-family: sans-serif;
-        font-weight: 800;
-        margin-top: 10px;
-        
-    }
-        .signBtn:hover{
-            background-color:#30302e;
-            transition: ease-in-out 300ms;
-        }
-    .loginame{
-        position: absolute;
-        left: 50%;
-        color: white;
-        font-family: sans-serif;
-        font-weight: 900;
-        top: 50px;
-        transform: translate(-50%, -50%);
-    }
-    .signuploginname{
-        padding-bottom: 20px;
-    }
-    .forgotpass{
-        text-align: right;
-        color: #f26522;
-        cursor: pointer;
-        font-weight: 900;
-    }
-    .newusertell{
-        text-align: center;
-        font-weight: 900;
-        color: grey;
-    }
-    .signupLogin{
-        font-weight: 900;
-        color: #f26522;
-        cursor: pointer;
-    }
-    .out-text label{
-        position: absolute;
-        top: 2px;
-        left:0;
-        transition: ease-in-out 500ms;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .afterEmail::after{
-        content: "Email";
-    }
-    .afterPassword::after{
-        content: "Password";
-    }
-    .afterConfirmPassword::after{
-        content: "Confirm Password";
-    }
-    .afterFullName::after{
-        content: "Full Name";
-    }
-    .showpassword::after{
-        content: "Show Password";
-    }
-    .password-check{
-        text-align: right;
-    }
-    .errorsignup{
-        color: red;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.249);
-        padding: 10px 0;
-    }
-    .Loadingbtn{
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-        background-color: #e1ad2d;
-        color: white;
-        border: none;
-        padding: 0px 0px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        cursor: pointer;
-        font-family: sans-serif;
-        font-weight: 800;
-        margin-top: 10px;
-        text-align: center;
-    }
-    .Loadingbtn svg{
-        width: 80px;
-        height: 40px;
-        margin: 0 auto;
-        display: block;
-    }
-    .bypassbtn{
-        width: 100%;
-        background-color: #e1ad2d;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 10px 0px;
-    }
-    /* ? end of sigin */
 @media screen and (max-width: 555px) {
     /* ! footer */
     .under-subscribe-footer {
@@ -828,12 +661,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         gap: 2px;
     }
     /* ? end of footer */
-        /* ! sigin */
-        .under-signdiv {
-            width: 95%;
-        }
-    
-        /* ? end of sigin */
         
 }
 @media screen and (min-width: 590px) {
@@ -873,11 +700,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         left: -10px;
     }
     /* ? End of Cart page */
-    /* ! sigin */
-        .under-signdiv{
-            width: 50%;
-        }
-    /* ? end of sigin */
 }
 @media screen and (min-width: 600px) {
     /* ! Cart Page */
@@ -910,6 +732,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: none;
     }
     .Home-header {
-        padding-bottom: 100px;
+        padding-bottom: 140px;
     }
 }
